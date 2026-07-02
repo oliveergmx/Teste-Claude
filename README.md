@@ -110,9 +110,9 @@ mantendo o nome do arquivo (gerar também a versão `.webp`):
 |---|---|---|
 | Foto do growler 1L | Recorte de taças de chopp | `growler-chopp.{jpg,webp}` |
 
-Resolvido em jul/2026: a seção Wine Bar agora usa a foto real da adega
-(`vinho-adega.{jpg,webp}` — garrafa 1550 BRAS Reserva). O painel 02 do hero
-segue com o Chopp de Vinho (`chopp-vinho.{jpg,webp}`).
+Resolvido em jul/2026: o painel 02 do hero ("Wine Bar") usa a foto real da adega
+(`vinho-adega.{jpg,webp}` — garrafa 1550 BRAS Reserva). A seção Wine Bar segue
+com o Chopp de Vinho (`chopp-vinho.{jpg,webp}`), citado no próprio texto.
 
 ## Compatibilidade e performance
 
