@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>D'Bulltique — Parrilla · Vinhos · Cervejaria | Castelo, Belo Horizonte</title>
+<meta name="description" content="Parrilla argentina, wine bar e cervejaria artesanal própria sob o mesmo teto, no Castelo, em Belo Horizonte. Cortes na brasa, vinhos selecionados e a linha D'BullBeer com 5 estilos de chopp produzidos na casa.">
+<link rel="canonical" href="https://www.dbulltique.com.br/">
+<meta name="theme-color" content="#2e0a10">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:site_name" content="D'Bulltique">
+<meta property="og:title" content="D'Bulltique — Parrilla · Vinhos · Cervejaria | Castelo, BH">
+<meta property="og:description" content="Três casas, um fogo: parrilla argentina, wine bar e a cervejaria própria D'BullBeer, no Castelo, em Belo Horizonte. Reservas pelo WhatsApp.">
+<meta property="og:url" content="https://www.dbulltique.com.br/">
+<meta property="og:image" content="https://www.dbulltique.com.br/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fachada da D'Bulltique com o logotipo da casa — parrilla, vinhos e cervejaria em Belo Horizonte">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="D'Bulltique — Parrilla · Vinhos · Cervejaria | Castelo, BH">
+<meta name="twitter:description" content="Três casas, um fogo: parrilla argentina, wine bar e a cervejaria própria D'BullBeer, no Castelo, em Belo Horizonte.">
+<meta name="twitter:image" content="https://www.dbulltique.com.br/assets/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--
+  DISPLAY OFICIAL: Cheddar Gothic Rough (fonte paga do manual da marca).
+  Quando o arquivo .woff2 estiver disponível, coloque-o em /assets/fonts/,
+  descomente o @font-face em assets/css/main.css e troque a linha
+  "--disp" no :root abaixo por: --disp:'Cheddar Gothic Rough','Oswald',sans-serif;
+  Enquanto isso, Oswald (Google Fonts) atua como placeholder aprovado.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- CSS crítico (above the fold): variáveis, base, nav e hero -->
+<style>
+:root{
+  --bordo:#6b1f2a; --bordo-deep:#48121b; --bordo-black:#2e0a10;
+  --terroso:#8c3a3a; --fogo:#c65a2e; --ouro:#c89b3c; --ouro-vivo:#e0b95f;
+  --oliva:#5e6f3b; --cream:#f4efe9; --cream-dim:#d8cec1;
+  --line:rgba(200,155,60,.25); --shadow:0 24px 70px rgba(0,0,0,.5);
+  --disp:'Oswald',sans-serif; --body:'Montserrat',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+}
+body{font-family:var(--body);background:var(--bordo-black);color:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--ouro);color:var(--bordo-black)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E")}
+h1,h2,h3,.disp{font-family:var(--disp);text-transform:uppercase;line-height:1.05;font-weight:600;letter-spacing:.02em}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--ouro);display:inline-flex;align-items:center;gap:.9rem}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--ouro)}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{content:"";width:34px;height:1px;background:var(--ouro)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--body);font-weight:600;font-size:.82rem;
+  letter-spacing:.1em;text-transform:uppercase;padding:.85rem 1.7rem;border-radius:3px;border:1px solid var(--ouro);
+  color:var(--bordo-black);background:var(--ouro);cursor:pointer;-webkit-transition:all .3s ease;transition:all .3s ease}
+.btn:hover,.btn:focus-visible{background:var(--ouro-vivo);border-color:var(--ouro-vivo);-webkit-transform:translateY(-2px);transform:translateY(-2px);box-shadow:0 10px 30px rgba(200,155,60,.3)}
+.btn.ghost{background:transparent;color:var(--ouro)}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--ouro);color:var(--bordo-black)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-offset:3px}
+
+/* NAV */
+.nav{position:-webkit-sticky;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+  padding:.8rem clamp(1.2rem,4vw,3rem);background:rgba(46,10,16,.94);border-bottom:1px solid var(--line)}
+@supports ((-webkit-backdrop-filter:blur(10px)) or (backdrop-filter:blur(10px))){
+  .nav{background:rgba(46,10,16,.74);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}}
+.nav-logo img{height:44px;width:auto}
+.nav-links{display:flex;gap:1.7rem;align-items:center}
+.nav-links a{font-size:.78rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--cream-dim);transition:color .25s}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--ouro)}
+.nav-links a.btn{color:var(--bordo-black)}
+.burger{display:none;background:none;border:none;color:var(--cream);font-size:1.7rem;cursor:pointer;line-height:1}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+.triad{flex:1;display:flex;min-height:0}
+.panel{position:relative;flex:1;display:flex;align-items:flex-end;overflow:hidden;cursor:pointer;
+  border-right:1px solid rgba(200,155,60,.18);-webkit-transition:flex .7s cubic-bezier(.22,.61,.36,1);transition:flex .7s cubic-bezier(.22,.61,.36,1)}
+.panel:last-child{border-right:none}
+.panel:hover,.panel:focus-within{flex:1.9}
+.panel-photo{position:absolute;inset:0;overflow:hidden}
+.panel-photo img{width:100%;height:100%;object-fit:cover;
+  -webkit-transition:-webkit-transform 1.4s ease;transition:transform 1.4s ease}
+.panel:hover .panel-photo img{-webkit-transform:scale(1.06);transform:scale(1.06)}
+.panel::before{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(46,10,16,.72) 0%,rgba(46,10,16,.25) 42%,rgba(46,10,16,.88) 100%)}
+.panel-inner{position:relative;z-index:2;padding:clamp(1.4rem,3vw,2.6rem);width:100%}
+.panel-num{font-size:.66rem;letter-spacing:.3em;color:var(--ouro);text-transform:uppercase;font-weight:600}
+.panel-title{font-family:var(--disp);text-transform:uppercase;font-weight:600;font-size:clamp(1.5rem,3.2vw,2.7rem);margin:.35rem 0 .4rem;color:var(--cream)}
+.panel-desc{font-size:.86rem;color:var(--cream-dim);font-weight:300;max-width:34ch;max-height:0;opacity:0;overflow:hidden;
+  -webkit-transition:max-height .7s ease,opacity .6s ease .15s;transition:max-height .7s ease,opacity .6s ease .15s}
+.panel:hover .panel-desc,.panel:focus-within .panel-desc{max-height:130px;opacity:1}
+.panel-link{display:inline-block;margin-top:.7rem;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);border-bottom:1px solid var(--ouro);padding-bottom:2px}
+.hero-head{position:absolute;inset:0;z-index:3;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 1.2rem}
+.hero-logo{width:min(620px,84vw);height:auto;filter:drop-shadow(0 10px 46px rgba(0,0,0,.75))}
+.hero-sub{margin-top:1.4rem;font-size:clamp(.85rem,1.5vw,1.05rem);font-weight:300;color:var(--cream-dim);letter-spacing:.06em;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.hero-sub b{color:var(--ouro);font-weight:600}
+.hero-ctas{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;pointer-events:auto}
+.scroll-hint{position:absolute;bottom:1.4rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:4;
+  font-size:.62rem;letter-spacing:.35em;text-transform:uppercase;color:rgba(244,239,233,.55);animation:hint 2.6s ease-in-out infinite}
+@keyframes hint{0%,100%{opacity:.55;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}50%{opacity:1;-webkit-transform:translate(-50%,6px);transform:translate(-50%,6px)}}
+
+/* Orquestração de entrada do hero */
+@keyframes heroIn{from{opacity:0;-webkit-transform:translateY(22px);transform:translateY(22px)}to{opacity:1;-webkit-transform:none;transform:none}}
+.hero-logo{-webkit-animation:heroIn .9s ease .1s backwards;animation:heroIn .9s ease .1s backwards}
+.hero-sub{-webkit-animation:heroIn .9s ease .3s backwards;animation:heroIn .9s ease .3s backwards}
+.hero-ctas{-webkit-animation:heroIn .9s ease .5s backwards;animation:heroIn .9s ease .5s backwards}
+.panel{-webkit-animation:heroIn 1s ease backwards;animation:heroIn 1s ease backwards}
+.panel:nth-child(2){-webkit-animation-delay:.14s;animation-delay:.14s}
+.panel:nth-child(3){-webkit-animation-delay:.28s;animation-delay:.28s}
+
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(46,10,16,.98);
+    padding:1.6rem;gap:1.3rem;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .triad{flex-direction:column}
+  .panel{border-right:none;border-bottom:1px solid rgba(200,155,60,.18);min-height:150px}
+  .panel .panel-desc{display:none}
+  .hero{min-height:auto}
+  .hero-head{position:relative;padding:6.5rem 1.2rem 3.5rem;background:linear-gradient(180deg,var(--bordo-black),var(--bordo-deep))}
+  .scroll-hint{display:none}
+}
+</style>
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!-- Schema.org: Restaurante + Cervejaria -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Restaurant", "BarOrPub"],
+      "@id": "https://www.dbulltique.com.br/#restaurant",
+      "name": "D'Bulltique",
+      "alternateName": "D'Bulltique — Parrilla · Vinhos · Cervejaria",
+      "description": "Parrilla argentina, wine bar e cervejaria artesanal própria sob o mesmo teto, no bairro Castelo, em Belo Horizonte. Desde 2023.",
+      "url": "https://www.dbulltique.com.br/",
+      "image": "https://www.dbulltique.com.br/assets/img/og-image.jpg",
+      "logo": "https://www.dbulltique.com.br/assets/img/logo-lockup.png",
+      "foundingDate": "2023",
+      "servesCuisine": ["Parrilla argentina", "Churrasco", "Steakhouse"],
+      "acceptsReservations": "True",
+      "priceRange": "$$$",
+      "telephone": "+5531XXXXXXXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Altamiro Avelino Soares, 1021",
+        "addressLocality": "Belo Horizonte",
+        "addressRegion": "MG",
+        "postalCode": "31330-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -19.8829,
+        "longitude": -43.9836
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "18:00",
+          "closes": "00:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": ["https://www.instagram.com/dbulltique"]
+    },
+    {
+      "@type": "Brewery",
+      "@id": "https://www.dbulltique.com.br/#brewery",
+      "name": "D'BullBeer",
+      "description": "Cervejaria artesanal própria da D'Bulltique: 15.000 litros/mês, 70 barris em circulação e 5 estilos de chopp — Pilsen, Hop Lager, Session IPA, IPA e Chopp de Vinho. Fornecimento B2B de barris 50L/30L e growler 1L em BH e região.",
+      "url": "https://www.dbulltique.com.br/#cerveja",
+      "image": "https://www.dbulltique.com.br/assets/img/lineup-chopps.jpg",
+      "parentOrganization": { "@id": "https://www.dbulltique.com.br/#restaurant" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Altamiro Avelino Soares, 1021",
+        "addressLocality": "Belo Horizonte",
+        "addressRegion": "MG",
+        "postalCode": "31330-000",
+        "addressCountry": "BR"
+      },
+      "sameAs": ["https://www.instagram.com/dbulltique"]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#topo" class="nav-logo" aria-label="D'Bulltique — início"><img src="assets/img/logo-horizontal.png" alt="D'Bulltique — Parrilla, Vinhos e Cervejaria" width="950" height="302"></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nl">☰</button>
+  <div class="nav-links" id="nl">
+    <a href="#parrilla">Parrilla</a>
+    <a href="#cozinha">Cozinha</a>
+    <a href="#vinho">Wine Bar</a>
+    <a href="#cerveja">D'BullBeer</a>
+    <a href="#copa">Copa 2026</a>
+    <a href="#local">Onde Estamos</a>
+    <a href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" class="btn">Reservar Mesa</a>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <h1 class="sr-only">D'Bulltique — Parrilla, Vinhos e Cervejaria artesanal no Castelo, Belo Horizonte</h1>
+  <div class="hero-head">
+    <img class="hero-logo" src="assets/img/logo-lockup.png" alt="D'Bulltique — Parrilla · Vinhos · Cervejaria" width="1150" height="360" fetchpriority="high">
+    <p class="hero-sub">Castelo · Belo Horizonte — <b>três casas, um fogo.</b></p>
+    <div class="hero-ctas">
+      <a class="btn" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+      <a class="btn ghost" href="#cerveja">Conhecer a D'BullBeer</a>
+    </div>
+  </div>
+  <div class="triad" id="triad">
+    <a class="panel" href="#parrilla">
+      <div class="panel-photo">
+        <picture>
+          <source srcset="assets/img/parrilla-brasa.webp" type="image/webp">
+          <img src="assets/img/parrilla-brasa.jpg" alt="Cortes de carne assando na chapa sobre a brasa" width="960" height="1280" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="panel-inner">
+        <span class="panel-num">Casa 01</span>
+        <div class="panel-title">Parrilla</div>
+        <p class="panel-desc">Cortes nobres assados lentamente na brasa, no ritmo do fogo argentino.</p>
+        <span class="panel-link">Sentir o fogo</span>
+      </div>
+    </a>
+    <a class="panel" href="#vinho">
+      <div class="panel-photo">
+        <picture>
+          <source srcset="assets/img/chopp-vinho.webp" type="image/webp">
+          <img src="assets/img/chopp-vinho.jpg" alt="Chopp de Vinho rubro servido sobre o barril D'BullBeer" width="733" height="1100" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="panel-inner">
+        <span class="panel-num">Casa 02</span>
+        <div class="panel-title">Wine Bar</div>
+        <p class="panel-desc">Rótulos selecionados para acompanhar a carne — e o Chopp de Vinho da casa.</p>
+        <span class="panel-link">Abrir a adega</span>
+      </div>
+    </a>
+    <a class="panel" href="#cerveja">
+      <div class="panel-photo">
+        <picture>
+          <source srcset="assets/img/tanques-fermentacao.webp" type="image/webp">
+          <img src="assets/img/tanques-fermentacao.jpg" alt="Tanques de fermentação da cervejaria própria D'BullBeer" width="1152" height="754" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="panel-inner">
+        <span class="panel-num">Casa 03</span>
+        <div class="panel-title">Cervejaria</div>
+        <p class="panel-desc">D'BullBeer: 5 estilos de chopp artesanal produzidos pela própria casa.</p>
+        <span class="panel-link">Provar o malte</span>
+      </div>
+    </a>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">Desça</div>
+</header>
+
+<main>
+<section class="manifesto">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">O conceito</span>
+      <p class="mani-quote">Onde a brasa encontra o vinho — e a cerveja nasce <em>dentro de casa.</em></p>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><b>Desde 2023</b><span>No Castelo,<br>Belo Horizonte</span></div>
+      <div class="stat"><b data-count="15000">0</b><span>Litros / mês<br>de produção própria</span></div>
+      <div class="stat"><b data-count="70">0</b><span>Barris<br>em circulação</span></div>
+      <div class="stat"><b data-count="5">0</b><span>Estilos<br>de chopp artesanal</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="parrilla">
+  <div class="casa">
+    <div class="casa-visual rv">
+      <picture>
+        <source srcset="assets/img/costela-brasa.webp" type="image/webp">
+        <img src="assets/img/costela-brasa.jpg" alt="Costela na brasa com mandioca grelhada — parrilla D'Bulltique" width="1050" height="1400" loading="lazy" decoding="async">
+      </picture>
+      <span class="cv-badge">Casa 01 — Parrilla</span>
+    </div>
+    <div class="casa-body rv">
+      <span class="eyebrow">A Parrilla</span>
+      <h2 class="sec-title">O fogo manda no <em>tempo</em></h2>
+      <p class="lead">Na D'Bulltique, a parrilla não é um método — é uma filosofia. Cortes nobres assados lentamente sobre a brasa, sem pressa, do jeito que a tradição argentina ensina e a hospitalidade mineira serve.</p>
+      <ul class="feat-list">
+        <li><b>Cortes nobres na brasa</b> — selecionados e preparados no ponto exato</li>
+        <li><b>Fogo de verdade</b> — parrilla à vista, defumado natural, sem atalhos</li>
+        <li><b>Acompanhamentos da casa</b> — feitos para dividir a mesa</li>
+      </ul>
+      <a class="btn ghost" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20parrilla%20da%20D%27Bulltique." target="_blank" rel="noopener">Reservar na parrilla</a>
+    </div>
+  </div>
+</section>
+
+<section id="cozinha" class="galeria">
+  <div class="wrap" style="text-align:center">
+    <div class="rv">
+      <span class="eyebrow center">Direto da cozinha</span>
+      <h2 class="sec-title">Da brasa à <em>sobremesa</em></h2>
+      <p class="lead" style="margin:0 auto">Um cardápio que começa no fogo e termina na colher — entradas para dividir, carnes no ponto e finais doces que valem a espera.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item tall rv">
+        <picture>
+          <source srcset="assets/img/parrilla-brasa.webp" type="image/webp">
+          <img src="assets/img/parrilla-brasa.jpg" alt="Cortes na chapa com farofa e vinagrete" width="960" height="1280" loading="lazy" decoding="async">
+        </picture>
+        <div class="gal-cap">Cortes na brasa</div>
+      </div>
+      <div class="gal-item rv">
+        <picture>
+          <source srcset="assets/img/steak-tartare.webp" type="image/webp">
+          <img src="assets/img/steak-tartare.jpg" alt="Steak tartare com crocante de queijo" width="1050" height="1400" loading="lazy" decoding="async">
+        </picture>
+        <div class="gal-cap">Steak tartare</div>
+      </div>
+      <div class="gal-item rv">
+        <picture>
+          <source srcset="assets/img/aneis-cebola.webp" type="image/webp">
+          <img src="assets/img/aneis-cebola.jpg" alt="Anéis de cebola empanados com maionese da casa" width="1000" height="1333" loading="lazy" decoding="async">
+        </picture>
+        <div class="gal-cap">Entradas para dividir</div>
+      </div>
+      <div class="gal-item rv">
+        <picture>
+          <source srcset="assets/img/costela-brasa.webp" type="image/webp">
+          <img src="assets/img/costela-brasa.jpg" alt="Costela ao molho com mandioca grelhada" width="1050" height="1400" loading="lazy" decoding="async">
+        </picture>
+        <div class="gal-cap">Costela ao molho</div>
+      </div>
+      <div class="gal-item rv">
+        <picture>
+          <source srcset="assets/img/tiramisu.webp" type="image/webp">
+          <img src="assets/img/tiramisu.jpg" alt="Tiramisù da casa" width="788" height="1400" loading="lazy" decoding="async">
+        </picture>
+        <div class="gal-cap">Sobremesas da casa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vinho" class="vinho-sec">
+  <div class="casa rev">
+    <div class="casa-visual rv">
+      <picture>
+        <source srcset="assets/img/chopp-vinho.webp" type="image/webp">
+        <img src="assets/img/chopp-vinho.jpg" alt="Chopp de Vinho D'BullBeer servido sobre o barril — o encontro da adega com a cervejaria" width="733" height="1100" loading="lazy" decoding="async" style="min-height:380px">
+      </picture>
+      <span class="cv-badge">Casa 02 — Wine Bar</span>
+    </div>
+    <div class="casa-body rv">
+      <span class="eyebrow">O Wine Bar</span>
+      <h2 class="sec-title">Taças que conversam <em>com a carne</em></h2>
+      <p class="lead">Uma carta pensada para o casamento com a parrilla: tintos encorpados, rótulos de guarda e descobertas que valem a conversa. E, no cruzamento das nossas casas, nasceu o que só existe aqui: o <strong>Chopp de Vinho D'BullBeer</strong>.</p>
+      <ul class="feat-list">
+        <li><b>Carta selecionada</b> — curadoria voltada à harmonização com a brasa</li>
+        <li><b>Serviço em taça</b> — para provar sem compromisso com a garrafa</li>
+        <li><b>Chopp de Vinho</b> — o encontro da adega com a cervejaria, exclusivo da casa</li>
+      </ul>
+      <a class="btn ghost" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20conhecer%20a%20carta%20de%20vinhos%20da%20D%27Bulltique." target="_blank" rel="noopener">Conhecer a carta</a>
+    </div>
+  </div>
+</section>
+
+<section id="cerveja" class="beer-sec">
+  <div class="wrap" style="text-align:center">
+    <div class="rv">
+      <span class="eyebrow center">Casa 03 — Cervejaria própria</span>
+      <h2 class="sec-title">D'BULL<em>BEER</em></h2>
+      <p class="lead" style="margin:0 auto">Não servimos cerveja artesanal. <strong>Fabricamos.</strong> Cada chopp parte de grãos e lúpulos escolhidos um a um — da matéria-prima selecionada à torneira, com produção própria, insumos rastreados e identidade de verdade no copo.</p>
+    </div>
+    <div class="lineup rv">
+      <picture>
+        <source srcset="assets/img/lineup-chopps.webp" type="image/webp">
+        <img src="assets/img/lineup-chopps.jpg" alt="A fileira dos cinco estilos de chopp D'BullBeer no balcão: Pilsen, Hop Lager, Session IPA, IPA e Chopp de Vinho" width="660" height="1100" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <div class="beer-grid">
+      <div class="beer-card rv" style="--accent:#e0b95f">
+        <div class="beer-photo">
+          <picture>
+            <source srcset="assets/img/card-pilsen.webp" type="image/webp">
+            <img src="assets/img/card-pilsen.jpg" alt="Chopp Pilsen D'BullBeer, dourado e translúcido" width="250" height="250" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="beer-body"><span class="beer-tag">01 · Leve · Clássica</span>
+        <h3 class="beer-style">Pilsen</h3>
+        <p class="beer-desc">Leve, dourado e refrescante. O clássico de entrada, fácil de beber e sempre certeiro.</p></div>
+      </div>
+      <div class="beer-card rv" style="--accent:#c89b3c">
+        <div class="beer-photo">
+          <picture>
+            <source srcset="assets/img/card-hoplager.webp" type="image/webp">
+            <img src="assets/img/card-hoplager.jpg" alt="Chopp Hop Lager D'BullBeer" width="270" height="270" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="beer-body"><span class="beer-tag">02 · Lupulada · Equilibrada</span>
+        <h3 class="beer-style">Hop Lager</h3>
+        <p class="beer-desc">Lager com lupulagem extra. Mais aroma e personalidade, mantendo a leveza.</p></div>
+      </div>
+      <div class="beer-card rv" style="--accent:#c65a2e">
+        <div class="beer-photo">
+          <picture>
+            <source srcset="assets/img/card-session.webp" type="image/webp">
+            <img src="assets/img/card-session.jpg" alt="Session IPA D'BullBeer" width="280" height="280" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="beer-body"><span class="beer-tag">03 · Aromática · Tropical</span>
+        <h3 class="beer-style">Session IPA</h3>
+        <p class="beer-desc">Aromática e tropical, baixo teor alcoólico. Notas cítricas que convidam ao próximo gole.</p></div>
+      </div>
+      <div class="beer-card rv" style="--accent:#8c3a3a">
+        <div class="beer-photo">
+          <picture>
+            <source srcset="assets/img/card-ipa.webp" type="image/webp">
+            <img src="assets/img/card-ipa.jpg" alt="Chopp IPA D'BullBeer, âmbar e intenso" width="330" height="330" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="beer-body"><span class="beer-tag">04 · Intensa · Marcante</span>
+        <h3 class="beer-style">IPA</h3>
+        <p class="beer-desc">Amargor marcante e lúpulo no comando. Para quem busca intensidade e caráter.</p></div>
+      </div>
+      <div class="beer-card rv" style="--accent:#6b1f2a">
+        <div class="beer-photo">
+          <picture>
+            <source srcset="assets/img/card-vinho.webp" type="image/webp">
+            <img src="assets/img/card-vinho.jpg" alt="Chopp de Vinho D'BullBeer, assinatura exclusiva da casa" width="380" height="420" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="beer-body"><span class="beer-tag">05 · Exclusiva · Assinatura</span>
+        <h3 class="beer-style">Chopp de Vinho</h3>
+        <p class="beer-desc">Encorpado e rubro, a assinatura da casa. Une parrilla, vinho e cerveja num só copo.</p></div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="casa-visual rv">
+        <picture>
+          <source srcset="assets/img/session-ipa-promo.webp" type="image/webp">
+          <img src="assets/img/session-ipa-promo.jpg" alt="Session IPA D'BullBeer: duas taças de chopp dourado no bar, com notas de maracujá, manga e grapefruit" width="681" height="1100" loading="lazy" decoding="async">
+        </picture>
+        <span class="cv-badge">Destaque da casa</span>
+      </div>
+      <div class="rv" style="text-align:left">
+        <span class="eyebrow">Destaque da casa</span>
+        <h3 class="sec-title">Session <em>IPA</em></h3>
+        <p class="lead">Leve, refrescante e extremamente aromática. Entrega toda a personalidade dos lúpulos com notas cítricas e tropicais — sem pesar. A porta de entrada perfeita para quem quer conhecer o mundo das IPAs.</p>
+        <div class="fruit-tags"><span>Maracujá</span><span>Manga</span><span>Grapefruit</span></div>
+        <a class="btn ghost" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Provar no salão</a>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="rv" style="text-align:left;order:0">
+        <span class="eyebrow">Nossa fábrica</span>
+        <h3 class="sec-title">Da nossa fábrica <em>para sua mesa</em></h3>
+        <p class="lead">A cervejaria fica dentro da casa. Mostura, fervura e fermentação conduzidas aqui, com controle de cada etapa — do tanque ao copo, sem intermediários. São <strong>15.000 litros por mês</strong> e <strong>70 barris em circulação</strong>.</p>
+        <ul class="feat-list" style="margin-top:1.4rem">
+          <li><b>Produção própria</b> — controle total da brassagem à torneira</li>
+          <li><b>Insumos rastreados</b> — lote, safra e origem documentados</li>
+          <li><b>Frescor garantido</b> — logística própria em BH e região</li>
+        </ul>
+      </div>
+      <div class="casa-visual rv" style="order:1">
+        <picture>
+          <source srcset="assets/img/fabrica-mesa.webp" type="image/webp">
+          <img src="assets/img/fabrica-mesa.jpg" alt="Da nossa fábrica para sua mesa: taça de chopp D'BullBeer ao lado do tanque da cervejaria" width="1400" height="921" loading="lazy" decoding="async">
+        </picture>
+        <span class="cv-badge">Cervejaria na casa</span>
+      </div>
+    </div>
+
+    <div class="insumos">
+      <div class="insumo rv">
+        <div class="insumo-photo">
+          <picture>
+            <source srcset="assets/img/insumo-maltas.webp" type="image/webp">
+            <img src="assets/img/insumo-maltas.jpg" alt="Sacas de Malta Pilsen El Jaguar e UMA Malta, cevada argentina" width="1012" height="900" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="ibody">
+          <span class="src">Malte · Boortmalt SAU — Argentina</span>
+          <h3>Malta Pilsen El Jaguar &amp; UMA Malta</h3>
+          <p>Cevada 100% argentina, de perfil maltado limpo. A espinha dorsal das nossas lagers e da Session IPA.</p>
+        </div>
+      </div>
+      <div class="insumo rv">
+        <div class="insumo-photo">
+          <picture>
+            <source srcset="assets/img/insumo-lupulo.webp" type="image/webp">
+            <img src="assets/img/insumo-lupulo.jpg" alt="Embalagem de lúpulo Hallertau Perle importado da Alemanha" width="618" height="1100" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="ibody">
+          <span class="src">Lúpulo · Spalter — Alemanha</span>
+          <h3>Hallertau Perle</h3>
+          <p>Lúpulo nobre de dupla finalidade: amargor refinado e aroma floral, levemente condimentado, que assina nossas receitas.</p>
+        </div>
+      </div>
+      <div class="insumo rv">
+        <div class="insumo-photo">
+          <picture>
+            <source srcset="assets/img/insumo-levedura.webp" type="image/webp">
+            <img src="assets/img/insumo-levedura.jpg" alt="Pacote de levedura SafLager W-34/70 da Fermentis" width="618" height="1100" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="ibody">
+          <span class="src">Levedura · Fermentis by Lesaffre</span>
+          <h3>SafLager W-34/70</h3>
+          <p>A cepa lager mais confiável do mundo. Perfil neutro e limpo que deixa o malte e o lúpulo se expressarem.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="formatos">
+      <div class="formato rv">
+        <picture>
+          <source srcset="assets/img/barril-50l.webp" type="image/webp">
+          <img src="assets/img/barril-50l.jpg" alt="Barril de 50 litros de chopp D'BullBeer" width="720" height="900" loading="lazy" decoding="async">
+        </picture>
+        <div class="fbody"><b>Barril 50L</b><span>Alto giro</span><p>Bares, eventos e operações de chopp contínuo.</p></div>
+      </div>
+      <div class="formato rv">
+        <picture>
+          <source srcset="assets/img/barril-30l.webp" type="image/webp">
+          <img src="assets/img/barril-30l.jpg" alt="Barril de 30 litros de chopp D'BullBeer" width="720" height="900" loading="lazy" decoding="async">
+        </picture>
+        <div class="fbody"><b>Barril 30L</b><span>Formato intermediário</span><p>Ideal para pontos de menor volume ou estilos rotativos.</p></div>
+      </div>
+      <div class="formato rv">
+        <picture>
+          <source srcset="assets/img/growler-chopp.webp" type="image/webp">
+          <img src="assets/img/growler-chopp.jpg" alt="Taças de chopp D'BullBeer douradas — growler de 1 litro para levar" width="361" height="460" loading="lazy" decoding="async">
+        </picture>
+        <div class="fbody"><b>Growler 1L</b><span>Para levar</span><p>Chopp fresco na sua casa. A experiência da D'Bulltique na sua mesa.</p></div>
+      </div>
+    </div>
+
+    <div class="b2b rv">
+      <div>
+        <h3>Vamos colocar a <em>D'BullBeer</em> na sua torneira?</h3>
+        <p>Fornecimento recorrente de barris para bares, restaurantes e eventos, com produção sob demanda e logística própria em Belo Horizonte e região. Fale com o comercial para tabela, condições e o primeiro pedido.</p>
+      </div>
+      <a class="btn" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20D%27BullBeer%20para%20meu%20estabelecimento." target="_blank" rel="noopener">Falar com o comercial</a>
+    </div>
+  </div>
+</section>
+
+<section id="copa" class="copa">
+  <div class="copa-bg" aria-hidden="true"></div>
+  <div class="wrap rv">
+    <span class="eyebrow center">Temporada especial</span>
+    <h2 class="sec-title">Copa do Mundo <em>2026</em></h2>
+    <p class="lead">Todos os jogos com telão, brasa acesa e chopp da casa gelado. A mesa mais disputada do Castelo nesta Copa é a nossa — garanta a sua antes que o apito soe.</p>
+    <div class="copa-strip">
+      <div class="copa-item"><b>Telão</b><span>Todos os jogos</span></div>
+      <div class="copa-item"><b>Combos</b><span>Parrilla + Chopp</span></div>
+      <div class="copa-item"><b>Reserva</b><span>Mesa garantida</span></div>
+    </div>
+    <a class="btn" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20mesa%20para%20os%20jogos%20da%20Copa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar para os jogos</a>
+  </div>
+</section>
+
+<section id="local">
+  <div class="loc-grid">
+    <div class="rv">
+      <span class="eyebrow">Onde estamos</span>
+      <h2 class="sec-title">Vem sentir o <em>cheiro da brasa</em></h2>
+      <div class="info-block">
+        <h3>Endereço</h3>
+        <p>Av. Altamiro Avelino Soares, 1.021<br>Castelo · Belo Horizonte/MG · CEP 31.330-000</p>
+      </div>
+      <div class="info-block">
+        <h3>Horários</h3>
+        <p>[Ter–Sáb: 18h às 00h · Dom: 12h às 17h — confirmar]</p>
+      </div>
+      <div class="info-block">
+        <h3>Reservas &amp; Contato</h3>
+        <p>WhatsApp: [ (31) 9 XXXX-XXXX ] · Instagram: <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener" class="link-ouro">@dbulltique</a></p>
+      </div>
+      <div class="loc-ctas">
+        <a class="btn" href="https://maps.google.com/?q=Av.+Altamiro+Avelino+Soares,+1021,+Castelo,+Belo+Horizonte,+MG" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        <a class="btn ghost" href="[LINK_CARDAPIOWEB]" target="_blank" rel="noopener">Ver cardápio digital</a>
+      </div>
+    </div>
+    <div class="loc-visual rv">
+      <picture>
+        <source srcset="assets/img/fachada.webp" type="image/webp">
+        <img src="assets/img/fachada.jpg" alt="Fachada da D'Bulltique no Castelo, Belo Horizonte, ao entardecer" width="1048" height="1400" loading="lazy" decoding="async">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap rv">
+    <span class="eyebrow center">Reserve agora</span>
+    <h2 class="sec-title">Três casas.<br>Um fogo. <em>Sua mesa.</em></h2>
+    <p class="lead">Reserva direto pelo WhatsApp — resposta rápida, mesa garantida.</p>
+    <a class="btn btn-big" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar minha mesa</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <a href="#topo"><img src="assets/img/logo-horizontal.png" alt="D'Bulltique" width="950" height="302"></a>
+    <div class="socials">
+      <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://maps.google.com/?q=Av.+Altamiro+Avelino+Soares,+1021,+Castelo,+Belo+Horizonte,+MG" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+    <small>© 2026 D'Bulltique — Parrilla · Vinhos · Cervejaria<br>Av. Altamiro Avelino Soares, 1.021 — Castelo, Belo Horizonte/MG<br>Beba com moderação. Venda proibida para menores de 18 anos.</small>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.9C8.8 2.9 3 8.7 3 15.9c0 2.3.6 4.5 1.7 6.5L3 29.1l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.8 13-13S23.2 2.9 16 2.9zm0 23.7c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.9 4.8-10.7 10.7-10.7s10.7 4.8 10.7 10.7-4.8 10.6-10.7 10.6zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6c0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
