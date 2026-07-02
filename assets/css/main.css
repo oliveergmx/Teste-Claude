@@ -78,6 +78,35 @@ section{padding:clamp(4.5rem,9vw,8rem) clamp(1.2rem,6vw,6rem);position:relative}
 /* WINE BAR */
 .vinho-sec{background:var(--bordo-deep)}
 
+/* CARDÁPIO */
+.menu-sec{background:var(--bordo-black);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.menu-sec::before{content:"";position:absolute;left:-120px;bottom:-80px;width:460px;height:480px;opacity:.05;z-index:1;
+  background:url('../img/touro-simbolo.png') no-repeat center/contain}
+.menu-tabs{display:flex;gap:.55rem;justify-content:center;flex-wrap:wrap;margin-top:2.6rem}
+.menu-tab{font-family:var(--body);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--cream-dim);background:transparent;border:1px solid var(--line);border-radius:99px;
+  padding:.62rem 1.15rem;cursor:pointer;-webkit-transition:all .25s ease;transition:all .25s ease}
+.menu-tab:hover{color:var(--ouro);border-color:var(--ouro)}
+.menu-tab.active{background:var(--ouro);border-color:var(--ouro);color:var(--bordo-black)}
+.menu-panels{margin-top:2.6rem;text-align:left}
+.menu-panel{display:none}
+.menu-panel.active{display:block;-webkit-animation:heroIn .5s ease backwards;animation:heroIn .5s ease backwards}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:.2rem 3.4rem}
+.menu-item{padding:1rem 0;border-bottom:1px solid rgba(200,155,60,.13)}
+.mi-head{display:flex;align-items:baseline;gap:.7rem}
+.mi-name{font-size:.94rem;font-weight:600;color:var(--cream);letter-spacing:.01em}
+.mi-flag{font-size:.52rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--bordo-black);
+  background:var(--ouro);padding:.16rem .5rem;border-radius:2px;white-space:nowrap;display:inline-block;
+  -webkit-transform:translateY(-2px);transform:translateY(-2px);margin-left:.35rem}
+.mi-dots{flex:1;min-width:26px;border-bottom:1px dotted rgba(200,155,60,.45);
+  -webkit-transform:translateY(-4px);transform:translateY(-4px)}
+.mi-price{font-family:var(--disp);font-weight:600;font-size:1.04rem;color:var(--ouro);white-space:nowrap}
+.mi-price small{font-size:.6rem;font-weight:600;color:var(--cream-dim);letter-spacing:.05em;text-transform:uppercase}
+.mi-desc{font-size:.8rem;color:var(--cream-dim);font-weight:300;margin-top:.28rem;max-width:60ch}
+.menu-note{font-size:.76rem;color:rgba(244,239,233,.55);font-style:italic;text-align:center;margin-top:2.2rem}
+.menu-panel .menu-note{margin-top:1.6rem}
+.menu-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem}
+
 /* D'BULLBEER */
 .beer-sec{background:linear-gradient(180deg,var(--bordo-black),#241016 60%,var(--bordo-black))}
 .lineup{margin:3rem auto 0;max-width:560px;border-radius:6px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
@@ -96,6 +125,9 @@ section{padding:clamp(4.5rem,9vw,8rem) clamp(1.2rem,6vw,6rem);position:relative}
 .beer-tag{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro);font-weight:600;display:block;margin:.9rem 0 .4rem}
 .beer-style{font-family:var(--disp);text-transform:uppercase;font-weight:600;font-size:1.4rem;color:var(--cream);letter-spacing:.02em}
 .beer-desc{font-size:.83rem;color:var(--cream-dim);font-weight:300;margin-top:.6rem}
+.beer-price{display:block;margin-top:.8rem;padding-top:.7rem;border-top:1px dashed rgba(200,155,60,.25);
+  font-family:var(--disp);font-size:.94rem;font-weight:600;color:var(--ouro);letter-spacing:.04em}
+.beer-price small{font-family:var(--body);font-size:.62rem;font-weight:500;color:var(--cream-dim);letter-spacing:.08em;text-transform:uppercase}
 
 /* Destaque + Fábrica */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:center;max-width:1180px;margin:5rem auto 0}
@@ -142,6 +174,11 @@ section{padding:clamp(4.5rem,9vw,8rem) clamp(1.2rem,6vw,6rem);position:relative}
 .info-block h3{font-size:1rem;color:var(--ouro);margin-bottom:.4rem;letter-spacing:.08em}
 .info-block p{font-size:.92rem;color:var(--cream-dim);font-weight:300}
 .loc-ctas{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap}
+.gbadge{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.4rem;padding:.6rem 1.1rem;
+  border:1px solid var(--line);border-radius:3px;background:rgba(107,31,42,.25);font-size:.86rem;color:var(--cream-dim)}
+.gbadge .g-stars{color:var(--ouro);letter-spacing:.14em;font-size:.88rem}
+.gbadge b{color:var(--cream);font-weight:700}
+.info-block p em{font-style:normal;font-size:.78rem;color:rgba(244,239,233,.5)}
 .loc-visual{border-radius:6px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);position:relative}
 .loc-visual img{width:100%;height:auto;object-fit:cover}
 
@@ -186,7 +223,7 @@ footer{padding:2.6rem clamp(1.2rem,6vw,6rem);border-top:1px solid var(--line);ba
   .b2b .btn{justify-self:start}
 }
 @media(max-width:900px){
-  .manifesto .wrap,.casa,.split,.loc-grid{grid-template-columns:1fr}
+  .manifesto .wrap,.casa,.split,.loc-grid,.menu-cols{grid-template-columns:1fr}
   .casa.rev .casa-visual{order:0}
   .casa-visual img{min-height:280px}
   .rv{opacity:1;-webkit-transform:none;transform:none;transition:none}

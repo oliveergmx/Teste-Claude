@@ -58,6 +58,38 @@
     showAll();
   }
 
+  /* Abas do cardápio */
+  var tabs = document.querySelectorAll('.menu-tab');
+  var panels = document.querySelectorAll('.menu-panel');
+  function activateTab(tab) {
+    var target = tab.getAttribute('aria-controls');
+    for (var a = 0; a < tabs.length; a++) {
+      var on = tabs[a] === tab;
+      if (on) { tabs[a].classList.add('active'); } else { tabs[a].classList.remove('active'); }
+      tabs[a].setAttribute('aria-selected', on ? 'true' : 'false');
+      tabs[a].setAttribute('tabindex', on ? '0' : '-1');
+    }
+    for (var p = 0; p < panels.length; p++) {
+      if (panels[p].id === target) { panels[p].classList.add('active'); }
+      else { panels[p].classList.remove('active'); }
+    }
+  }
+  for (var t = 0; t < tabs.length; t++) {
+    (function (idx) {
+      tabs[idx].addEventListener('click', function () { activateTab(tabs[idx]); });
+      tabs[idx].addEventListener('keydown', function (ev) {
+        var key = ev.key || ev.keyCode;
+        var dir = (key === 'ArrowRight' || key === 39) ? 1 :
+                  (key === 'ArrowLeft' || key === 37) ? -1 : 0;
+        if (!dir) return;
+        ev.preventDefault();
+        var next = (idx + dir + tabs.length) % tabs.length;
+        tabs[next].focus();
+        activateTab(tabs[next]);
+      });
+    })(t);
+  }
+
   /* Contadores animados dos stats */
   var counted = false;
   function fmt(n) { return n.toLocaleString('pt-BR'); }

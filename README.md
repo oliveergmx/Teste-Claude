@@ -45,16 +45,27 @@ A fonte oficial do manual é paga e não estava na pasta do projeto, então **Os
    --disp:'Cheddar Gothic Rough','Oswald',sans-serif;
    ```
 
-## Dados pendentes (buscar e substituir antes de publicar)
+## Dados reais já aplicados (do Google Business + CardápioWeb, jul/2026)
 
-| Placeholder | Onde | Substituir por |
+- **Telefone:** (31) 3582-7134 — exibição, `tel:`, links `wa.me/553135827134` e JSON-LD.
+- **Cardápio digital:** https://app.cardapioweb.com/the_bulltique_vino_bar — botões
+  "Cardápio completo & Delivery" e "Pedir & Delivery", e `hasMenu` no JSON-LD.
+- **Avaliação Google:** 4,7 ★ · 71 avaliações — badge na seção "Onde estamos" e
+  `aggregateRating` no JSON-LD.
+- **Seção `#cardapio`:** amostra curada do cardápio real em 7 abas (Parrilla & Porções,
+  Entradas & Petiscos, Pratos do Chef, Sanduíches & Pães, Chopps D'BullBeer,
+  Vinhos & Espumantes, Empório), com preços de julho/2026.
+- **Preços dos chopps** (480ml + growler 1L) também nos 5 cards da seção D'BullBeer.
+
+## Dados pendentes (confirmar antes de publicar)
+
+| Item | Onde | O que confirmar |
 |---|---|---|
-| `5531XXXXXXXXX` | Todos os links `wa.me` (index.html) e `telephone` no JSON-LD | Número real com DDI (formato `5531XXXXXXXXX`) |
-| `[ (31) 9 XXXX-XXXX ]` | Seção "Onde estamos" | Número formatado para exibição |
-| `[Ter–Sáb: 18h às 00h · Dom: 12h às 17h — confirmar]` | Seção "Onde estamos" | Horários reais (confirmar com a Débora) — ajustar também o `openingHoursSpecification` no JSON-LD |
-| `[LINK_CARDAPIOWEB]` | Botão "Ver cardápio digital" | URL do cardápio no CardápioWeb |
+| Horários completos | "Onde estamos" + `openingHoursSpecification` no JSON-LD | Google informa só "abre às 11h30"; dias (Ter–Dom) e fechamento (23h) são estimativa — confirmar com a Débora |
+| WhatsApp | Links `wa.me/553135827134` | Confirmar se o WhatsApp da casa atende no fixo (31) 3582-7134; se for um celular, buscar e substituir `553135827134` |
 | `https://www.dbulltique.com.br` | Canonical, Open Graph, JSON-LD, robots.txt, sitemap.xml | Domínio real quando definido |
 | Coordenadas `-19.8829, -43.9836` | `geo` no JSON-LD | Coordenadas exatas do Google Maps (as atuais são aproximadas para o Castelo) |
+| Preços do cardápio | Seção `#cardapio` e cards da D'BullBeer | Retratos de julho/2026 — revalidar a cada alteração no CardápioWeb |
 
 Cada CTA de WhatsApp já carrega mensagem pré-formatada por contexto
 (reserva geral, parrilla, carta de vinhos, Copa, comercial B2B).

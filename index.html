@@ -158,7 +158,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
       "servesCuisine": ["Parrilla argentina", "Churrasco", "Steakhouse"],
       "acceptsReservations": "True",
       "priceRange": "$$$",
-      "telephone": "+5531XXXXXXXXX",
+      "telephone": "+55-31-3582-7134",
+      "hasMenu": "https://app.cardapioweb.com/the_bulltique_vino_bar",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "71"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Altamiro Avelino Soares, 1021",
@@ -175,15 +181,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "18:00",
-          "closes": "00:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "12:00",
-          "closes": "17:00"
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "11:30",
+          "closes": "23:00"
         }
       ],
       "sameAs": ["https://www.instagram.com/dbulltique"]
@@ -218,11 +218,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
   <div class="nav-links" id="nl">
     <a href="#parrilla">Parrilla</a>
     <a href="#cozinha">Cozinha</a>
+    <a href="#cardapio">Cardápio</a>
     <a href="#vinho">Wine Bar</a>
     <a href="#cerveja">D'BullBeer</a>
     <a href="#copa">Copa 2026</a>
     <a href="#local">Onde Estamos</a>
-    <a href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" class="btn">Reservar Mesa</a>
+    <a href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" class="btn">Reservar Mesa</a>
   </div>
 </nav>
 
@@ -232,7 +233,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
     <img class="hero-logo" src="assets/img/logo-lockup.png" alt="D'Bulltique — Parrilla · Vinhos · Cervejaria" width="1150" height="360" fetchpriority="high">
     <p class="hero-sub">Castelo · Belo Horizonte — <b>três casas, um fogo.</b></p>
     <div class="hero-ctas">
-      <a class="btn" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+      <a class="btn" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
       <a class="btn ghost" href="#cerveja">Conhecer a D'BullBeer</a>
     </div>
   </div>
@@ -317,7 +318,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         <li><b>Fogo de verdade</b> — parrilla à vista, defumado natural, sem atalhos</li>
         <li><b>Acompanhamentos da casa</b> — feitos para dividir a mesa</li>
       </ul>
-      <a class="btn ghost" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20parrilla%20da%20D%27Bulltique." target="_blank" rel="noopener">Reservar na parrilla</a>
+      <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20parrilla%20da%20D%27Bulltique." target="_blank" rel="noopener">Reservar na parrilla</a>
     </div>
   </div>
 </section>
@@ -369,6 +370,259 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
   </div>
 </section>
 
+<section id="cardapio" class="menu-sec">
+  <noscript><style>.menu-panel{display:block !important}.menu-tabs{display:none}</style></noscript>
+  <div class="wrap">
+    <div class="rv" style="text-align:center">
+      <span class="eyebrow center">Direto do salão</span>
+      <h2 class="sec-title">Um gosto do <em>cardápio</em></h2>
+      <p class="lead" style="margin:0 auto">Uma amostra do que sai da brasa, da cozinha e das torneiras. O cardápio completo — com pedidos, retirada e delivery — está no nosso cardápio digital.</p>
+    </div>
+
+    <div class="menu-tabs rv" role="tablist" aria-label="Categorias do cardápio">
+      <button class="menu-tab active" id="mt-grelha" role="tab" aria-selected="true" aria-controls="mp-grelha">Parrilla &amp; Porções</button>
+      <button class="menu-tab" id="mt-entradas" role="tab" aria-selected="false" aria-controls="mp-entradas" tabindex="-1">Entradas &amp; Petiscos</button>
+      <button class="menu-tab" id="mt-chef" role="tab" aria-selected="false" aria-controls="mp-chef" tabindex="-1">Pratos do Chef</button>
+      <button class="menu-tab" id="mt-sand" role="tab" aria-selected="false" aria-controls="mp-sand" tabindex="-1">Sanduíches &amp; Pães</button>
+      <button class="menu-tab" id="mt-chopp" role="tab" aria-selected="false" aria-controls="mp-chopp" tabindex="-1">Chopps D'BullBeer</button>
+      <button class="menu-tab" id="mt-vinhos" role="tab" aria-selected="false" aria-controls="mp-vinhos" tabindex="-1">Vinhos &amp; Espumantes</button>
+      <button class="menu-tab" id="mt-emporio" role="tab" aria-selected="false" aria-controls="mp-emporio" tabindex="-1">Empório</button>
+    </div>
+
+    <div class="menu-panels rv">
+      <div class="menu-panel active" id="mp-grelha" role="tabpanel" aria-labelledby="mt-grelha">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Picanha Completa <span class="mi-flag">Mais pedido</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 185,80</span></div>
+            <p class="mi-desc">Para 2 pessoas: 300g da mais suculenta picanha bovina, grelhada na parrilla, com arroz, farofa e legumes.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Picanha 300g com Batata Rústica</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 139,80</span></div>
+            <p class="mi-desc">O corte símbolo da casa, no ponto exato, com batatas rústicas temperadas.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Picanha 300g com Legumes na Brasa</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 149,80</span></div>
+            <p class="mi-desc">O equilíbrio entre a intensidade da carne e a leveza dos legumes finalizados na brasa.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Ancho 300g com Batata Rústica</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
+            <p class="mi-desc">Marmoreio generoso e sabor profundo de parrilla.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Chorizo 300g com Batata Rústica</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
+            <p class="mi-desc">O clássico argentino, suculento e defumado pelo fogo.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Iscas de Carne Acebolada</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 85,80</span></div>
+            <p class="mi-desc">Com batata palito — combinação irresistível para dividir.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Copa Lombo com Mandioca Frita</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 79,80</span></div>
+            <p class="mi-desc">Suíno macio na brasa com mandioca crocante.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Linguiças Recheadas 400g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 47,80</span></div>
+            <p class="mi-desc">Pernil com brie e mel · picanha com queijo coalho · contrafilé com gorgonzola · pernil com abacaxi e provolone.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="mp-entradas" role="tabpanel" aria-labelledby="mt-entradas">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Tartare na Ponta da Faca</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 64,80</span></div>
+            <p class="mi-desc">Filé mignon rigorosamente picado na ponta da faca, mostarda Dijon e especiarias clássicas.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Arancini de Funghi</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 67,80</span></div>
+            <p class="mi-desc">Bolinhos de risoto siciliano com mix de cogumelos frescos, empanados em panko, sobre fonduta de parmegiano.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Provoleta</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 54,80</span></div>
+            <p class="mi-desc">Provolone grelhado na parrilla, tomates confitados em azeite e pães artesanais da casa.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Tábua de Frios</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 54,80</span></div>
+            <p class="mi-desc">Presunto de parma, salame italiano e queijos brie, gruyère, gorgonzola e gouda.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Torresmo de Rolo 300g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 45,80</span></div>
+            <p class="mi-desc">Com geleia de frutas vermelhas — o mineiro encontra a alta cozinha.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Anéis de Cebola D'Bulltique <span class="mi-flag">Da casa</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 39,80</span></div>
+            <p class="mi-desc">Porção generosa de 400g, dourados e sequinhos, com maionese defumada da casa.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Focaccia ao Forno</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
+            <p class="mi-desc">Sal grosso e ervas, quente e crocante, com manteiga aerada da casa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="mp-chef" role="tabpanel" aria-labelledby="mt-chef">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Filé Mignon au Poivre</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
+            <p class="mi-desc">A picância aromática da pimenta verde com mostarda em grãos, acompanhado de risoto parmegiano.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Salmão Grelhado</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
+            <p class="mi-desc">Beurre blanc de alcaparras e risoto cremoso de aspargos.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Linguini à Carbonara</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 78,80</span></div>
+            <p class="mi-desc">A verdadeira receita romana: massa al dente num creme aveludado de gemas e queijo.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Tortellini de Brie com Damasco</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 78,80</span></div>
+            <p class="mi-desc">Fonduta de parmesão com nozes — uma combinação doce e salgada.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Frango Crocante ao Pomodoro</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 78,80</span></div>
+            <p class="mi-desc">Crosta de panko ultracrocante, interior suculento, linguini ao molho pomodoro.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Penne à l'Amatriciana</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 74,80</span></div>
+            <p class="mi-desc">A essência da culinária romana: molho rico de tomates pelados.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Pratos Kids</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>a partir de R$</small> 32,80</span></div>
+            <p class="mi-desc">Frango empanado, frango com massa pomodoro ou picadinho de mignon — feitos para os pequenos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="mp-sand" role="tabpanel" aria-labelledby="mt-sand">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">D'Bullguer <span class="mi-flag">Assinatura</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 49,80</span></div>
+            <p class="mi-desc">Pão de brioche, 180g de blend de carne angus, cheddar, bacon, maionese defumada, picles e alface americana.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">D'BullChicken</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 47,80</span></div>
+            <p class="mi-desc">Empanado de frango crocante, cheddar, bacon, maionese defumada e picles no brioche.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">D'BullFish</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 47,80</span></div>
+            <p class="mi-desc">Empanado de peixe crocante, cheddar e maionese defumada no brioche.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Choripan de Pernil</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
+            <p class="mi-desc">Linguiça de pernil e queijo canastra aquecido até derreter.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Choripan de Contrafilé</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
+            <p class="mi-desc">Contrafilé suculento com queijo gorgonzola derretido.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Pães Recheados</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 14,80</span></div>
+            <p class="mi-desc">Alho com queijo · tomate com provolone crocante · alho-poró com queijo suíço · frango com requeijão cremoso.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="mp-chopp" role="tabpanel" aria-labelledby="mt-chopp">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Régua de Degustação <span class="mi-flag">Comece aqui</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
+            <p class="mi-desc">Os 5 estilos da casa lado a lado — descubra o seu antes de pedir o copo cheio.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Premium Lager 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 15,00</span></div>
+            <p class="mi-desc">Leve, dourada e refrescante — o clássico de entrada. Growler 1L: R$ 34,00.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Hop Lager 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 18,00</span></div>
+            <p class="mi-desc">A leveza das lagers com o destaque aromático dos lúpulos. Growler 1L: R$ 38,00.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Session IPA 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 19,00</span></div>
+            <p class="mi-desc">Leve, refrescante e extremamente aromática. Growler 1L: R$ 42,00.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">América IPA 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 20,00</span></div>
+            <p class="mi-desc">Marcante, de aroma intenso e amargor equilibrado. Growler 1L: R$ 42,00.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Chopp de Vinho 480ml <span class="mi-flag">Exclusivo</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 18,00</span></div>
+            <p class="mi-desc">Servido trincando: a tradição vinícola com a leveza do draft e notas intensas de frutas vermelhas. Growler 1L: R$ 40,00.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="mp-vinhos" role="tabpanel" aria-labelledby="mt-vinhos">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Taça de Espumante</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 35,00</span></div>
+            <p class="mi-desc">Para começar bem, sem compromisso com a garrafa.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Chandon Brut Reserve</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 145,80</span></div>
+            <p class="mi-desc">Espumante — o brinde clássico.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Água Santa Chardonnay 2024</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
+            <p class="mi-desc">Branco — frescor para as entradas e o salmão.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Petit Chablis Les Grappes d'Or 2022</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 229,80</span></div>
+            <p class="mi-desc">Branco · Moillard, França — mineralidade de Borgonha.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">EA Cartuxa Rosé</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 185,80</span></div>
+            <p class="mi-desc">Rosé · Alentejo, Portugal — elegância para a tarde inteira.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Assobio Douro 2023</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 279,80</span></div>
+            <p class="mi-desc">Tinto · Esporão, Portugal — profundidade do Douro para a parrilla.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Esporão Reserva DOC 2022 <span class="mi-flag">Guarda</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 341,80</span></div>
+            <p class="mi-desc">Tinto · Alentejo, Portugal — o rótulo de guarda da adega.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Progreso Cabernet Sauvignon 2025</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 129,80</span></div>
+            <p class="mi-desc">Tinto — o parceiro certeiro da carne vermelha.</p>
+          </div>
+        </div>
+        <p class="menu-note">Brancos, rosés, tintos e espumantes — a adega completa está na carta digital.</p>
+      </div>
+
+      <div class="menu-panel" id="mp-emporio" role="tabpanel" aria-labelledby="mt-emporio">
+        <div class="menu-cols">
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Growler D'BullBeer 1L <span class="mi-flag">Pra levar</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>a partir de R$</small> 34,00</span></div>
+            <p class="mi-desc">Do tanque para a sua geladeira: os 5 estilos da casa no formato de 1 litro.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Chimichurri da Casa 210g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,90</span></div>
+            <p class="mi-desc">Tradicional, limão siciliano ou picante — o tempero da parrilla em casa.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Salsa Criolla 210g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 26,90</span></div>
+            <p class="mi-desc">O molho argentino que acompanha qualquer brasa.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Farofa Monjolo</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 16,90</span></div>
+            <p class="mi-desc">Tradicional ou de alho — artesanal, direto do monjolo.</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-head"><span class="mi-name">Villa Café Gourmet 1kg</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 139,80</span></div>
+            <p class="mi-desc">Torrado em grãos — para o dia seguinte começar à altura do jantar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="menu-note rv">Preços de julho/2026, sujeitos a alteração. Cardápio completo, pedidos, retirada e delivery no CardápioWeb.</p>
+    <div class="menu-ctas rv">
+      <a class="btn" href="https://app.cardapioweb.com/the_bulltique_vino_bar" target="_blank" rel="noopener">Cardápio completo &amp; Delivery</a>
+      <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar mesa</a>
+    </div>
+  </div>
+</section>
+
 <section id="vinho" class="vinho-sec">
   <div class="casa rev">
     <div class="casa-visual rv">
@@ -387,7 +641,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         <li><b>Serviço em taça</b> — para provar sem compromisso com a garrafa</li>
         <li><b>Chopp de Vinho</b> — o encontro da adega com a cervejaria, exclusivo da casa</li>
       </ul>
-      <a class="btn ghost" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20conhecer%20a%20carta%20de%20vinhos%20da%20D%27Bulltique." target="_blank" rel="noopener">Conhecer a carta</a>
+      <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20conhecer%20a%20carta%20de%20vinhos%20da%20D%27Bulltique." target="_blank" rel="noopener">Conhecer a carta</a>
     </div>
   </div>
 </section>
@@ -415,7 +669,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         </div>
         <div class="beer-body"><span class="beer-tag">01 · Leve · Clássica</span>
         <h3 class="beer-style">Pilsen</h3>
-        <p class="beer-desc">Leve, dourado e refrescante. O clássico de entrada, fácil de beber e sempre certeiro.</p></div>
+        <p class="beer-desc">Leve, dourado e refrescante. O clássico de entrada, fácil de beber e sempre certeiro.</p>
+        <span class="beer-price"><small>480ml</small> R$ 15 <small>· Growler 1L</small> R$ 34</span></div>
       </div>
       <div class="beer-card rv" style="--accent:#c89b3c">
         <div class="beer-photo">
@@ -426,7 +681,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         </div>
         <div class="beer-body"><span class="beer-tag">02 · Lupulada · Equilibrada</span>
         <h3 class="beer-style">Hop Lager</h3>
-        <p class="beer-desc">Lager com lupulagem extra. Mais aroma e personalidade, mantendo a leveza.</p></div>
+        <p class="beer-desc">Lager com lupulagem extra. Mais aroma e personalidade, mantendo a leveza.</p>
+        <span class="beer-price"><small>480ml</small> R$ 18 <small>· Growler 1L</small> R$ 38</span></div>
       </div>
       <div class="beer-card rv" style="--accent:#c65a2e">
         <div class="beer-photo">
@@ -437,7 +693,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         </div>
         <div class="beer-body"><span class="beer-tag">03 · Aromática · Tropical</span>
         <h3 class="beer-style">Session IPA</h3>
-        <p class="beer-desc">Aromática e tropical, baixo teor alcoólico. Notas cítricas que convidam ao próximo gole.</p></div>
+        <p class="beer-desc">Aromática e tropical, baixo teor alcoólico. Notas cítricas que convidam ao próximo gole.</p>
+        <span class="beer-price"><small>480ml</small> R$ 19 <small>· Growler 1L</small> R$ 42</span></div>
       </div>
       <div class="beer-card rv" style="--accent:#8c3a3a">
         <div class="beer-photo">
@@ -448,7 +705,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         </div>
         <div class="beer-body"><span class="beer-tag">04 · Intensa · Marcante</span>
         <h3 class="beer-style">IPA</h3>
-        <p class="beer-desc">Amargor marcante e lúpulo no comando. Para quem busca intensidade e caráter.</p></div>
+        <p class="beer-desc">Amargor marcante e lúpulo no comando. Para quem busca intensidade e caráter.</p>
+        <span class="beer-price"><small>480ml</small> R$ 20 <small>· Growler 1L</small> R$ 42</span></div>
       </div>
       <div class="beer-card rv" style="--accent:#6b1f2a">
         <div class="beer-photo">
@@ -459,7 +717,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         </div>
         <div class="beer-body"><span class="beer-tag">05 · Exclusiva · Assinatura</span>
         <h3 class="beer-style">Chopp de Vinho</h3>
-        <p class="beer-desc">Encorpado e rubro, a assinatura da casa. Une parrilla, vinho e cerveja num só copo.</p></div>
+        <p class="beer-desc">Encorpado e rubro, a assinatura da casa. Une parrilla, vinho e cerveja num só copo.</p>
+        <span class="beer-price"><small>480ml</small> R$ 18 <small>· Growler 1L</small> R$ 40</span></div>
       </div>
     </div>
 
@@ -476,7 +735,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         <h3 class="sec-title">Session <em>IPA</em></h3>
         <p class="lead">Leve, refrescante e extremamente aromática. Entrega toda a personalidade dos lúpulos com notas cítricas e tropicais — sem pesar. A porta de entrada perfeita para quem quer conhecer o mundo das IPAs.</p>
         <div class="fruit-tags"><span>Maracujá</span><span>Manga</span><span>Grapefruit</span></div>
-        <a class="btn ghost" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Provar no salão</a>
+        <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Provar no salão</a>
       </div>
     </div>
 
@@ -571,7 +830,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
         <h3>Vamos colocar a <em>D'BullBeer</em> na sua torneira?</h3>
         <p>Fornecimento recorrente de barris para bares, restaurantes e eventos, com produção sob demanda e logística própria em Belo Horizonte e região. Fale com o comercial para tabela, condições e o primeiro pedido.</p>
       </div>
-      <a class="btn" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20D%27BullBeer%20para%20meu%20estabelecimento." target="_blank" rel="noopener">Falar com o comercial</a>
+      <a class="btn" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20D%27BullBeer%20para%20meu%20estabelecimento." target="_blank" rel="noopener">Falar com o comercial</a>
     </div>
   </div>
 </section>
@@ -587,7 +846,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
       <div class="copa-item"><b>Combos</b><span>Parrilla + Chopp</span></div>
       <div class="copa-item"><b>Reserva</b><span>Mesa garantida</span></div>
     </div>
-    <a class="btn" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20mesa%20para%20os%20jogos%20da%20Copa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar para os jogos</a>
+    <a class="btn" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20mesa%20para%20os%20jogos%20da%20Copa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar para os jogos</a>
   </div>
 </section>
 
@@ -602,15 +861,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
       </div>
       <div class="info-block">
         <h3>Horários</h3>
-        <p>[Ter–Sáb: 18h às 00h · Dom: 12h às 17h — confirmar]</p>
+        <p>Ter–Dom · a partir das 11h30 <em>(fechamento: consulte o Google — confirmar)</em></p>
       </div>
       <div class="info-block">
         <h3>Reservas &amp; Contato</h3>
-        <p>WhatsApp: [ (31) 9 XXXX-XXXX ] · Instagram: <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener" class="link-ouro">@dbulltique</a></p>
+        <p>Telefone e WhatsApp: <a href="tel:+553135827134" class="link-ouro">(31) 3582-7134</a> · Instagram: <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener" class="link-ouro">@dbulltique</a></p>
+      </div>
+      <div class="gbadge" aria-label="Nota 4,7 de 5 no Google, com 71 avaliações">
+        <span class="g-stars" aria-hidden="true">★★★★★</span><b>4,7</b> no Google · 71 avaliações
       </div>
       <div class="loc-ctas">
         <a class="btn" href="https://maps.google.com/?q=Av.+Altamiro+Avelino+Soares,+1021,+Castelo,+Belo+Horizonte,+MG" target="_blank" rel="noopener">Abrir no Google Maps</a>
-        <a class="btn ghost" href="[LINK_CARDAPIOWEB]" target="_blank" rel="noopener">Ver cardápio digital</a>
+        <a class="btn ghost" href="https://app.cardapioweb.com/the_bulltique_vino_bar" target="_blank" rel="noopener">Pedir &amp; Delivery</a>
       </div>
     </div>
     <div class="loc-visual rv">
@@ -627,7 +889,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
     <span class="eyebrow center">Reserve agora</span>
     <h2 class="sec-title">Três casas.<br>Um fogo. <em>Sua mesa.</em></h2>
     <p class="lead">Reserva direto pelo WhatsApp — resposta rápida, mesa garantida.</p>
-    <a class="btn btn-big" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar minha mesa</a>
+    <a class="btn btn-big" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar minha mesa</a>
   </div>
 </section>
 </main>
@@ -637,14 +899,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-
     <a href="#topo"><img src="assets/img/logo-horizontal.png" alt="D'Bulltique" width="950" height="302"></a>
     <div class="socials">
       <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">WhatsApp</a>
       <a href="https://maps.google.com/?q=Av.+Altamiro+Avelino+Soares,+1021,+Castelo,+Belo+Horizonte,+MG" target="_blank" rel="noopener">Google Maps</a>
     </div>
     <small>© 2026 D'Bulltique — Parrilla · Vinhos · Cervejaria<br>Av. Altamiro Avelino Soares, 1.021 — Castelo, Belo Horizonte/MG<br>Beba com moderação. Venda proibida para menores de 18 anos.</small>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5531XXXXXXXXX?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="wa-float" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.9C8.8 2.9 3 8.7 3 15.9c0 2.3.6 4.5 1.7 6.5L3 29.1l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.8 13-13S23.2 2.9 16 2.9zm0 23.7c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.9 4.8-10.7 10.7-10.7s10.7 4.8 10.7 10.7-4.8 10.6-10.7 10.6zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6c0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
 </a>
 
