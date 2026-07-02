@@ -53,6 +53,7 @@ section{padding:clamp(4.5rem,9vw,8rem) clamp(1.2rem,6vw,6rem);position:relative}
 .casa.rev .casa-visual{order:2}
 .casa-visual{position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
 .casa-visual img{width:100%;height:100%;object-fit:cover;min-height:420px;max-height:560px}
+.casa-visual video{width:100%;height:100%;object-fit:cover;min-height:420px;max-height:560px;display:block;background:var(--bordo-black)}
 .cv-badge{position:absolute;top:1.2rem;left:1.2rem;font-size:.62rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;
   color:var(--ouro);border:1px solid var(--line);padding:.45rem .9rem;border-radius:2px;background:rgba(46,10,16,.62);z-index:2}
 .casa-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(46,10,16,.55));pointer-events:none}
@@ -67,6 +68,7 @@ section{padding:clamp(4.5rem,9vw,8rem) clamp(1.2rem,6vw,6rem);position:relative}
 .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:1rem;margin-top:3rem}
 .gal-item{position:relative;border-radius:5px;overflow:hidden;border:1px solid var(--line)}
 .gal-item picture,.gal-item img{width:100%;height:100%}
+.gal-item video{width:100%;height:100%;object-fit:cover;display:block;background:var(--bordo-black)}
 .gal-item img{object-fit:cover;-webkit-transition:-webkit-transform .8s ease;transition:transform .8s ease}
 .gal-item:hover img{-webkit-transform:scale(1.07);transform:scale(1.07)}
 .gal-item.tall{grid-row:span 2}
@@ -225,6 +227,6 @@ footer{padding:2.6rem clamp(1.2rem,6vw,6rem);border-top:1px solid var(--line);ba
 @media(max-width:900px){
   .manifesto .wrap,.casa,.split,.loc-grid,.menu-cols{grid-template-columns:1fr}
   .casa.rev .casa-visual{order:0}
-  .casa-visual img{min-height:280px}
+  .casa-visual img,.casa-visual video{min-height:280px;max-height:440px}
   .rv{opacity:1;-webkit-transform:none;transform:none;transition:none}
 }

@@ -58,6 +58,31 @@
     showAll();
   }
 
+  /* Vídeos ambiente — tocam só quando visíveis; param fora da tela.
+     Com prefers-reduced-motion, ficam no poster (sem autoplay). */
+  var vids = document.querySelectorAll('video.vid-auto');
+  if (vids.length && !reduce) {
+    if ('IntersectionObserver' in window) {
+      var iov = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) {
+          var v = entries[i].target;
+          if (entries[i].isIntersecting) {
+            var p = v.play();
+            if (p && p['catch']) { p['catch'](function () {}); }
+          } else {
+            v.pause();
+          }
+        }
+      }, { threshold: 0.25 });
+      for (var vi = 0; vi < vids.length; vi++) { iov.observe(vids[vi]); }
+    } else {
+      for (var vj = 0; vj < vids.length; vj++) {
+        var pj = vids[vj].play();
+        if (pj && pj['catch']) { pj['catch'](function () {}); }
+      }
+    }
+  }
+
   /* Abas do cardápio */
   var tabs = document.querySelectorAll('.menu-tab');
   var panels = document.querySelectorAll('.menu-panel');

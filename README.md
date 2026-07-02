@@ -11,9 +11,16 @@ robots.txt          Indexação + link do sitemap
 sitemap.xml         Sitemap de página única
 assets/
   css/main.css      Estilos abaixo da dobra (o crítico está inline no <head>)
-  js/main.js        Vanilla JS: menu, brasas, scroll-reveal, contadores
+  js/main.js        Vanilla JS: menu, brasas, scroll-reveal, contadores, abas, vídeos
   img/              Fotos em WebP + fallback JPEG, logos PNG, og-image 1200×630
+  video/            Vídeos ambiente MP4/H.264 (sem áudio, faststart, 1–3,5 MB cada)
 ```
+
+Vídeos ambiente (`autoplay` mudo em loop, tocam apenas quando visíveis; com
+`prefers-reduced-motion` mostram só o poster): brasas da parrilla (`#parrilla`),
+torneiras de chopp ("Da nossa fábrica para sua mesa") e dois pratos na galeria
+da cozinha. A arte "Da nossa fábrica para sua mesa" (`fabrica-mesa.{jpg,webp}`)
+segue no repositório caso prefiram a arte no lugar do vídeo.
 
 Sem build, sem dependências: é só servir a pasta.
 
