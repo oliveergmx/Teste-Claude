@@ -3,932 +3,772 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>D'Bulltique — Parrilla · Vinhos · Cervejaria | Castelo, Belo Horizonte</title>
-<meta name="description" content="Parrilla argentina, wine bar e cervejaria artesanal própria sob o mesmo teto, no Castelo, em Belo Horizonte. Cortes na brasa, vinhos selecionados e a linha D'BullBeer com 5 estilos de chopp produzidos na casa.">
-<link rel="canonical" href="https://www.dbulltique.com.br/">
-<meta name="theme-color" content="#2e0a10">
-
-<!-- Open Graph -->
-<meta property="og:type" content="restaurant.restaurant">
-<meta property="og:site_name" content="D'Bulltique">
-<meta property="og:title" content="D'Bulltique — Parrilla · Vinhos · Cervejaria | Castelo, BH">
-<meta property="og:description" content="Três casas, um fogo: parrilla argentina, wine bar e a cervejaria própria D'BullBeer, no Castelo, em Belo Horizonte. Reservas pelo WhatsApp.">
-<meta property="og:url" content="https://www.dbulltique.com.br/">
-<meta property="og:image" content="https://www.dbulltique.com.br/assets/img/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Fachada da D'Bulltique com o logotipo da casa — parrilla, vinhos e cervejaria em Belo Horizonte">
+<title>Só Ofertas — Mídia Cooperada | Apresentação de Parceria</title>
+<meta name="description" content="Sua marca dentro de uma rede que transforma ofertas em movimento. 16 unidades, 18 milhões de impressões e um ecossistema digital regional pronto para transformar verba de mídia em alcance, relacionamento e oportunidades.">
+<meta name="theme-color" content="#08080D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Só Ofertas — Mídia Cooperada">
+<meta property="og:title" content="Só Ofertas — Mídia Cooperada">
+<meta property="og:description" content="Marcas fortes. Ofertas relevantes. Resultados que movimentam cidades.">
 <meta property="og:locale" content="pt_BR">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="D'Bulltique — Parrilla · Vinhos · Cervejaria | Castelo, BH">
-<meta name="twitter:description" content="Três casas, um fogo: parrilla argentina, wine bar e a cervejaria própria D'BullBeer, no Castelo, em Belo Horizonte.">
-<meta name="twitter:image" content="https://www.dbulltique.com.br/assets/img/og-image.jpg">
-
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/favicon.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--
-  DISPLAY OFICIAL: Cheddar Gothic Rough (fonte paga do manual da marca).
-  Quando o arquivo .woff2 estiver disponível, coloque-o em /assets/fonts/,
-  descomente o @font-face em assets/css/main.css e troque a linha
-  "--disp" no :root abaixo por: --disp:'Cheddar Gothic Rough','Oswald',sans-serif;
-  Enquanto isso, Oswald (Google Fonts) atua como placeholder aprovado.
--->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-
-<!-- CSS crítico (above the fold): variáveis, base, nav e hero -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FFD800'/%3E%3Ccircle cx='32' cy='32' r='17' fill='%23C98A3E'/%3E%3Ccircle cx='32' cy='32' r='12.5' fill='%23D8DCE2'/%3E%3C/svg%3E">
 <style>
+/* ============================================================
+   SÓ OFERTAS — MÍDIA COOPERADA
+   Direção de arte: varejo moderno + inteligência de dados
+   Base escura · acentos nas cores oficiais da marca
+   ============================================================ */
 :root{
-  --bordo:#6b1f2a; --bordo-deep:#48121b; --bordo-black:#2e0a10;
-  --terroso:#8c3a3a; --fogo:#c65a2e; --ouro:#c89b3c; --ouro-vivo:#e0b95f;
-  --oliva:#5e6f3b; --cream:#f4efe9; --cream-dim:#d8cec1;
-  --line:rgba(200,155,60,.25); --shadow:0 24px 70px rgba(0,0,0,.5);
-  --disp:'Oswald',sans-serif; --body:'Montserrat',sans-serif;
+  --bg:#08080D;
+  --bg-2:#0C0D14;
+  --panel:rgba(255,255,255,.032);
+  --panel-strong:rgba(255,255,255,.055);
+  --line:rgba(255,255,255,.085);
+  --line-soft:rgba(255,255,255,.055);
+  --ink:#F4F3EE;
+  --ink-2:#A9AAB4;
+  --ink-3:#70727C;
+  --yellow:#FFD800;
+  --yellow-deep:#F0B400;
+  --red:#E01020;
+  --red-soft:#FF3B4A;
+  --grad-brand:linear-gradient(100deg,#FFD800 0%,#FFB300 55%,#FF8A00 100%);
+  --radius:14px;
+  --radius-lg:22px;
+  --wrap:1180px;
+  --font:"Inter","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
 }
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+*{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
-body{font-family:var(--body);background:var(--bordo-black);color:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::selection{background:var(--ouro);color:var(--bordo-black)}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.045;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E")}
-h1,h2,h3,.disp{font-family:var(--disp);text-transform:uppercase;line-height:1.05;font-weight:600;letter-spacing:.02em}
-.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--ouro);display:inline-flex;align-items:center;gap:.9rem}
-.eyebrow::before{content:"";width:34px;height:1px;background:var(--ouro)}
-.eyebrow.center{justify-content:center}
-.eyebrow.center::after{content:"";width:34px;height:1px;background:var(--ouro)}
-.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--body);font-weight:600;font-size:.82rem;
-  letter-spacing:.1em;text-transform:uppercase;padding:.85rem 1.7rem;border-radius:3px;border:1px solid var(--ouro);
-  color:var(--bordo-black);background:var(--ouro);cursor:pointer;-webkit-transition:all .3s ease;transition:all .3s ease}
-.btn:hover,.btn:focus-visible{background:var(--ouro-vivo);border-color:var(--ouro-vivo);-webkit-transform:translateY(-2px);transform:translateY(-2px);box-shadow:0 10px 30px rgba(200,155,60,.3)}
-.btn.ghost{background:transparent;color:var(--ouro)}
-.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--ouro);color:var(--bordo-black)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--ouro-vivo);outline-offset:3px}
+::selection{background:var(--yellow);color:#111}
 
-/* NAV */
-.nav{position:-webkit-sticky;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
-  padding:.8rem clamp(1.2rem,4vw,3rem);background:rgba(46,10,16,.94);border-bottom:1px solid var(--line)}
-@supports ((-webkit-backdrop-filter:blur(10px)) or (backdrop-filter:blur(10px))){
-  .nav{background:rgba(46,10,16,.74);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}}
-.nav-logo img{height:44px;width:auto}
-.nav-links{display:flex;gap:1.7rem;align-items:center}
-.nav-links a{font-size:.78rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--cream-dim);transition:color .25s}
-.nav-links a:hover,.nav-links a:focus-visible{color:var(--ouro)}
-.nav-links a.btn{color:var(--bordo-black)}
-.burger{display:none;background:none;border:none;color:var(--cream);font-size:1.7rem;cursor:pointer;line-height:1}
+/* ---------- textura sutil de fundo ---------- */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:26px 26px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,.35));
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,.35));
+}
 
-/* HERO */
-.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
-.triad{flex:1;display:flex;min-height:0}
-.panel{position:relative;flex:1;display:flex;align-items:flex-end;overflow:hidden;cursor:pointer;
-  border-right:1px solid rgba(200,155,60,.18);-webkit-transition:flex .7s cubic-bezier(.22,.61,.36,1);transition:flex .7s cubic-bezier(.22,.61,.36,1)}
-.panel:last-child{border-right:none}
-.panel:hover,.panel:focus-within{flex:1.9}
-.panel-photo{position:absolute;inset:0;overflow:hidden}
-.panel-photo img{width:100%;height:100%;object-fit:cover;
-  -webkit-transition:-webkit-transform 1.4s ease;transition:transform 1.4s ease}
-.panel:hover .panel-photo img{-webkit-transform:scale(1.06);transform:scale(1.06)}
-.panel::before{content:"";position:absolute;inset:0;z-index:1;
-  background:linear-gradient(180deg,rgba(46,10,16,.72) 0%,rgba(46,10,16,.25) 42%,rgba(46,10,16,.88) 100%)}
-.panel-inner{position:relative;z-index:2;padding:clamp(1.4rem,3vw,2.6rem);width:100%}
-.panel-num{font-size:.66rem;letter-spacing:.3em;color:var(--ouro);text-transform:uppercase;font-weight:600}
-.panel-title{font-family:var(--disp);text-transform:uppercase;font-weight:600;font-size:clamp(1.5rem,3.2vw,2.7rem);margin:.35rem 0 .4rem;color:var(--cream)}
-.panel-desc{font-size:.86rem;color:var(--cream-dim);font-weight:300;max-width:34ch;max-height:0;opacity:0;overflow:hidden;
-  -webkit-transition:max-height .7s ease,opacity .6s ease .15s;transition:max-height .7s ease,opacity .6s ease .15s}
-.panel:hover .panel-desc,.panel:focus-within .panel-desc{max-height:130px;opacity:1}
-.panel-link{display:inline-block;margin-top:.7rem;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);border-bottom:1px solid var(--ouro);padding-bottom:2px}
-.hero-head{position:absolute;inset:0;z-index:3;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 1.2rem}
-.hero-logo{width:min(620px,84vw);height:auto;filter:drop-shadow(0 10px 46px rgba(0,0,0,.75))}
-.hero-sub{margin-top:1.4rem;font-size:clamp(.85rem,1.5vw,1.05rem);font-weight:300;color:var(--cream-dim);letter-spacing:.06em;text-shadow:0 2px 14px rgba(0,0,0,.8)}
-.hero-sub b{color:var(--ouro);font-weight:600}
-.hero-ctas{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;pointer-events:auto}
-.scroll-hint{position:absolute;bottom:1.4rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:4;
-  font-size:.62rem;letter-spacing:.35em;text-transform:uppercase;color:rgba(244,239,233,.55);animation:hint 2.6s ease-in-out infinite}
-@keyframes hint{0%,100%{opacity:.55;-webkit-transform:translate(-50%,0);transform:translate(-50%,0)}50%{opacity:1;-webkit-transform:translate(-50%,6px);transform:translate(-50%,6px)}}
+/* ---------- barra de progresso ---------- */
+#progress{
+  position:fixed;top:0;left:0;height:2px;width:0%;
+  background:var(--grad-brand);z-index:1000;
+  box-shadow:0 0 12px rgba(255,216,0,.55);
+}
 
-/* Orquestração de entrada do hero */
-@keyframes heroIn{from{opacity:0;-webkit-transform:translateY(22px);transform:translateY(22px)}to{opacity:1;-webkit-transform:none;transform:none}}
-.hero-logo{-webkit-animation:heroIn .9s ease .1s backwards;animation:heroIn .9s ease .1s backwards}
-.hero-sub{-webkit-animation:heroIn .9s ease .3s backwards;animation:heroIn .9s ease .3s backwards}
-.hero-ctas{-webkit-animation:heroIn .9s ease .5s backwards;animation:heroIn .9s ease .5s backwards}
-.panel{-webkit-animation:heroIn 1s ease backwards;animation:heroIn 1s ease backwards}
-.panel:nth-child(2){-webkit-animation-delay:.14s;animation-delay:.14s}
-.panel:nth-child(3){-webkit-animation-delay:.28s;animation-delay:.28s}
+/* ---------- navegação ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px clamp(20px,4vw,48px);
+  transition:background .45s var(--ease),border-color .45s var(--ease),padding .45s var(--ease);
+  border-bottom:1px solid transparent;
+}
+nav.scrolled{
+  background:rgba(8,8,13,.82);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom-color:var(--line-soft);
+  padding-top:11px;padding-bottom:11px;
+}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-brand svg{height:30px;width:auto;display:block}
+.nav-brand span{
+  font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-2);white-space:nowrap;
+}
+.nav-links{display:flex;gap:26px;align-items:center;list-style:none}
+.nav-links a{
+  color:var(--ink-2);text-decoration:none;font-size:.82rem;font-weight:500;
+  letter-spacing:.04em;transition:color .25s;
+}
+.nav-links a:hover{color:var(--yellow)}
+.nav-cta{
+  color:#111 !important;background:var(--grad-brand);
+  padding:9px 20px;border-radius:99px;font-weight:700 !important;
+}
+.nav-cta:hover{filter:brightness(1.06)}
+@media(max-width:900px){.nav-links li:not(.keep){display:none}}
+@media(max-width:600px){
+  .nav-brand span{display:none}
+  .nav-cta{padding:8px 16px;font-size:.78rem;white-space:nowrap}
+}
 
-@media(max-width:900px){
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(46,10,16,.98);
-    padding:1.6rem;gap:1.3rem;border-bottom:1px solid var(--line)}
-  .nav-links.open{display:flex}
-  .burger{display:block}
-  .triad{flex-direction:column}
-  .panel{border-right:none;border-bottom:1px solid rgba(200,155,60,.18);min-height:150px}
-  .panel .panel-desc{display:none}
-  .hero{min-height:auto}
-  .hero-head{position:relative;padding:6.5rem 1.2rem 3.5rem;background:linear-gradient(180deg,var(--bordo-black),var(--bordo-deep))}
-  .scroll-hint{display:none}
+/* ---------- estrutura ---------- */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,4.5vw,48px);position:relative;z-index:2}
+section{position:relative;padding:clamp(84px,11vw,150px) 0;overflow:hidden}
+.section-line{border-top:1px solid var(--line-soft)}
+
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--yellow);margin-bottom:22px;
+}
+.kicker::before{content:"";width:26px;height:1px;background:var(--yellow)}
+h1,h2,h3{font-weight:800;letter-spacing:-.025em;line-height:1.08}
+h2{font-size:clamp(1.9rem,4.4vw,3.15rem);max-width:17em}
+h2 em{font-style:normal;background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(1rem,1.6vw,1.18rem);color:var(--ink-2);max-width:40em;margin-top:20px}
+.lead strong{color:var(--ink);font-weight:600}
+
+/* ---------- luzes de fundo / parallax ---------- */
+.glow{position:absolute;border-radius:50%;filter:blur(110px);pointer-events:none;z-index:0;opacity:.5;will-change:transform}
+.glow.g-yellow{background:radial-gradient(circle,rgba(255,205,0,.20),transparent 65%)}
+.glow.g-red{background:radial-gradient(circle,rgba(224,16,32,.16),transparent 65%)}
+
+/* ---------- HERO ---------- */
+header.hero{
+  min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;padding:120px 0 90px;
+}
+.hero-map{position:absolute;inset:0;z-index:0;opacity:.75}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid var(--line);border-radius:99px;
+  background:rgba(255,255,255,.04);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:8px 18px;font-size:.74rem;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-2);margin-bottom:38px;
+}
+.hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--yellow);box-shadow:0 0 10px var(--yellow);animation:pulse 2.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero-logo{max-width:min(480px,78vw);margin-bottom:44px}
+.hero-logo svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 60px rgba(255,216,0,.16))}
+h1.hero-title{font-size:clamp(2.3rem,6vw,4.5rem);max-width:13.5em;letter-spacing:-.03em}
+h1.hero-title em{font-style:normal;background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:clamp(1.02rem,1.8vw,1.28rem);color:var(--ink-2);margin-top:26px;max-width:36em}
+.hero-actions{display:flex;gap:16px;margin-top:44px;flex-wrap:wrap}
+.btn{
+  position:relative;display:inline-flex;align-items:center;gap:10px;
+  padding:15px 30px;border-radius:99px;font-weight:700;font-size:.95rem;
+  text-decoration:none;transition:transform .25s var(--ease),box-shadow .25s var(--ease),filter .25s;
+  will-change:transform;
+}
+.btn-primary{background:var(--grad-brand);color:#101010;box-shadow:0 10px 34px rgba(255,180,0,.22)}
+.btn-primary:hover{filter:brightness(1.05);box-shadow:0 14px 44px rgba(255,180,0,.32)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,216,0,.5);color:var(--yellow)}
+.hero-strip{
+  display:flex;gap:clamp(24px,4vw,58px);flex-wrap:wrap;
+  margin-top:70px;padding-top:34px;border-top:1px solid var(--line-soft);
+}
+.hero-strip .hs{min-width:120px}
+.hero-strip b{display:block;font-size:clamp(1.4rem,2.6vw,2rem);font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.hero-strip small{color:var(--ink-3);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.scroll-cue{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  color:var(--ink-3);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.scroll-cue::after{
+  content:"";width:1px;height:38px;
+  background:linear-gradient(180deg,var(--yellow),transparent);
+  animation:cue 2.2s var(--ease) infinite;
+}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- animação de entrada ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.on{opacity:1;transform:none}
+.stagger>*{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.stagger.on>*{opacity:1;transform:none}
+.stagger.on>*:nth-child(1){transition-delay:.05s}
+.stagger.on>*:nth-child(2){transition-delay:.13s}
+.stagger.on>*:nth-child(3){transition-delay:.21s}
+.stagger.on>*:nth-child(4){transition-delay:.29s}
+.stagger.on>*:nth-child(5){transition-delay:.37s}
+.stagger.on>*:nth-child(6){transition-delay:.45s}
+.stagger.on>*:nth-child(7){transition-delay:.53s}
+.stagger.on>*:nth-child(8){transition-delay:.61s}
+
+/* ---------- conceito ---------- */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,90px);align-items:start}
+@media(max-width:920px){.split{grid-template-columns:1fr}}
+.flow-card{
+  border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  padding:clamp(26px,3.4vw,40px);
+  position:relative;overflow:hidden;
+}
+.flow-card::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(600px 200px at 20% -10%,rgba(255,216,0,.08),transparent 60%);
+}
+.flow-title{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:22px}
+.flow-list{list-style:none;display:grid;gap:0}
+.flow-list li{
+  display:flex;align-items:center;gap:14px;padding:13px 0;
+  border-bottom:1px solid var(--line-soft);font-weight:500;font-size:.97rem;
+}
+.flow-list li:last-child{border-bottom:none}
+.flow-list .dot{
+  flex:0 0 auto;width:30px;height:30px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,216,0,.1);border:1px solid rgba(255,216,0,.28);
+}
+.flow-list .dot svg{width:15px;height:15px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.quote{
+  margin-top:34px;padding-left:22px;border-left:2px solid var(--yellow);
+  font-size:1.06rem;color:var(--ink-2);font-weight:500;max-width:32em;
+}
+.quote b{color:var(--ink)}
+
+/* ---------- números ---------- */
+.grid-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+@media(max-width:1000px){.grid-stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid-stats{grid-template-columns:1fr}}
+.stat{
+  position:relative;border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.012));
+  padding:28px 26px 26px;
+  transition:transform .35s var(--ease),border-color .35s;
+}
+.stat:hover{transform:translateY(-4px);border-color:rgba(255,216,0,.35)}
+.stat::after{
+  content:"";position:absolute;top:0;left:24px;right:24px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,216,0,.5),transparent);
+  opacity:0;transition:opacity .35s;
+}
+.stat:hover::after{opacity:1}
+.stat .num{
+  font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  font-variant-numeric:tabular-nums;line-height:1.05;
+}
+.stat .num sub{font-size:.45em;font-weight:700;color:var(--ink-2);vertical-align:baseline}
+.stat .lbl{margin-top:9px;font-size:.85rem;color:var(--ink-2);font-weight:500}
+.stat .tag{
+  position:absolute;top:20px;right:20px;font-size:.62rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.stat[data-tip]{cursor:help}
+.stat[data-tip]::before{
+  content:attr(data-tip);position:absolute;left:14px;right:14px;bottom:calc(100% - 6px);
+  transform:translateY(6px);
+  background:#15161F;border:1px solid var(--line);border-radius:10px;
+  padding:10px 13px;font-size:.74rem;line-height:1.5;color:var(--ink-2);
+  opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:20;
+  box-shadow:0 16px 40px rgba(0,0,0,.5);
+}
+.stat[data-tip]:hover::before,.stat[data-tip]:focus-visible::before{opacity:1;transform:translateY(-4px)}
+.src-note{margin-top:26px;font-size:.76rem;color:var(--ink-3)}
+
+/* ---------- ecossistema ---------- */
+.grid-eco{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+@media(max-width:980px){.grid-eco{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid-eco{grid-template-columns:1fr}}
+.eco{
+  border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:linear-gradient(165deg,rgba(255,255,255,.045),rgba(255,255,255,.01));
+  padding:30px 28px;transition:transform .35s var(--ease),border-color .35s;
+  position:relative;
+}
+.eco:hover{transform:translateY(-4px);border-color:rgba(255,216,0,.3)}
+.eco .ic{
+  width:46px;height:46px;border-radius:13px;margin-bottom:20px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,216,0,.09);border:1px solid rgba(255,216,0,.25);
+}
+.eco .ic svg{width:22px;height:22px;stroke:var(--yellow);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.eco h3{font-size:1.06rem;margin-bottom:9px;letter-spacing:-.01em}
+.eco p{font-size:.9rem;color:var(--ink-2)}
+
+/* ---------- presença regional / gráfico de barras ---------- */
+.chart-card{
+  margin-top:52px;border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:linear-gradient(170deg,rgba(255,255,255,.04),rgba(255,255,255,.012));
+  padding:clamp(24px,3.4vw,42px);
+}
+.chart-title{font-size:.95rem;font-weight:700;letter-spacing:-.01em}
+.chart-sub{font-size:.78rem;color:var(--ink-3);margin-top:4px;margin-bottom:30px}
+.bars{display:grid;gap:11px}
+.bar-row{
+  display:grid;grid-template-columns:150px 1fr 84px;gap:14px;align-items:center;
+  position:relative;padding:2px 0;border-radius:8px;
+}
+@media(max-width:640px){.bar-row{grid-template-columns:104px 1fr 66px}}
+.bar-row:hover .bar-fill,.bar-row:focus-visible .bar-fill{filter:brightness(1.15)}
+.bar-row:focus-visible{outline:1px solid rgba(255,216,0,.5);outline-offset:4px}
+.bar-name{font-size:.82rem;font-weight:600;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:14px;border-radius:4px;background:rgba(255,255,255,.05);overflow:hidden;position:relative}
+.bar-fill{
+  display:block;height:100%;width:0;border-radius:0 4px 4px 0;
+  background:linear-gradient(90deg,rgba(255,216,0,.55),var(--yellow));
+  transition:width 1.3s var(--ease);
+  box-shadow:0 0 14px rgba(255,216,0,.18);
+}
+.bar-val{font-size:.8rem;font-weight:700;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}
+.bar-row .bar-tip{
+  position:absolute;left:160px;bottom:calc(100% + 2px);z-index:30;
+  background:#15161F;border:1px solid var(--line);border-radius:10px;
+  padding:9px 13px;font-size:.73rem;line-height:1.55;color:var(--ink-2);white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;transform:translateY(4px);
+  box-shadow:0 16px 40px rgba(0,0,0,.5);
+}
+@media(max-width:640px){.bar-row .bar-tip{left:0}}
+.bar-row:hover .bar-tip,.bar-row:focus-visible .bar-tip{opacity:1;transform:none}
+.bar-tip b{color:var(--ink)}
+.chart-note{margin-top:22px;font-size:.74rem;color:var(--ink-3)}
+
+/* ---------- eficiência ---------- */
+.grid-cost{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+@media(max-width:1000px){.grid-cost{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid-cost{grid-template-columns:1fr}}
+.cost{
+  border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.012));
+  padding:30px 26px;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),border-color .35s;
+}
+.cost:hover{transform:translateY(-4px);border-color:rgba(224,16,32,.45)}
+.cost .what{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:16px}
+.cost .val{font-size:clamp(1.7rem,2.8vw,2.3rem);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.cost .val small{font-size:.42em;font-weight:700;color:var(--ink-2)}
+.cost .desc{margin-top:10px;font-size:.84rem;color:var(--ink-2)}
+.cost i{
+  position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,rgba(224,16,32,.14),transparent 70%);
+}
+
+/* ---------- como funciona ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px;counter-reset:step}
+@media(max-width:980px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{
+  border:1px solid var(--line);border-radius:var(--radius-lg);
+  background:linear-gradient(165deg,rgba(255,255,255,.045),rgba(255,255,255,.01));
+  padding:30px 26px;position:relative;
+}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  display:block;font-size:.82rem;font-weight:800;letter-spacing:.1em;
+  background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:16px;
+}
+.step h3{font-size:1.02rem;margin-bottom:9px}
+.step p{font-size:.88rem;color:var(--ink-2)}
+
+/* ---------- entregas ---------- */
+.deliver{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:52px}
+@media(max-width:760px){.deliver{grid-template-columns:1fr}}
+.dl{
+  display:flex;gap:16px;align-items:flex-start;
+  border:1px solid var(--line-soft);border-radius:var(--radius);
+  background:rgba(255,255,255,.025);padding:20px 22px;
+  transition:border-color .3s,background .3s;
+}
+.dl:hover{border-color:rgba(255,216,0,.3);background:rgba(255,255,255,.045)}
+.dl .chk{
+  flex:0 0 auto;width:24px;height:24px;border-radius:8px;margin-top:2px;
+  background:rgba(255,216,0,.1);border:1px solid rgba(255,216,0,.3);
+  display:flex;align-items:center;justify-content:center;
+}
+.dl .chk svg{width:13px;height:13px;stroke:var(--yellow);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.dl b{display:block;font-size:.95rem;margin-bottom:3px}
+.dl span{font-size:.85rem;color:var(--ink-2)}
+
+/* ---------- CTA final ---------- */
+.final{
+  border:1px solid var(--line);border-radius:26px;overflow:hidden;position:relative;
+  background:
+    radial-gradient(900px 420px at 18% -20%,rgba(255,216,0,.13),transparent 60%),
+    radial-gradient(700px 380px at 90% 120%,rgba(224,16,32,.12),transparent 60%),
+    linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.012));
+  padding:clamp(48px,7vw,96px) clamp(28px,6vw,88px);text-align:center;
+}
+.final h2{margin:0 auto;max-width:15em}
+.final .lead{margin-left:auto;margin-right:auto;text-align:center}
+.final .hero-actions{justify-content:center}
+
+/* ---------- rodapé ---------- */
+footer{border-top:1px solid var(--line-soft);padding:52px 0 64px;position:relative;z-index:2}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+.foot .fb svg{height:26px;width:auto;display:block;margin-bottom:14px}
+.foot p{font-size:.78rem;color:var(--ink-3);max-width:52em}
+.disclaimer{
+  margin-top:34px;padding-top:26px;border-top:1px solid var(--line-soft);
+  font-size:.74rem;color:var(--ink-3);line-height:1.7;
+}
+.disclaimer strong{color:var(--ink-2)}
+
+/* ---------- movimento reduzido ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .reveal,.stagger>*{opacity:1 !important;transform:none !important}
+  .bar-fill{transition:none}
 }
 </style>
-<link rel="stylesheet" href="assets/css/main.css">
-
-<!-- Schema.org: Restaurante + Cervejaria -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": ["Restaurant", "BarOrPub"],
-      "@id": "https://www.dbulltique.com.br/#restaurant",
-      "name": "D'Bulltique",
-      "alternateName": "D'Bulltique — Parrilla · Vinhos · Cervejaria",
-      "description": "Parrilla argentina, wine bar e cervejaria artesanal própria sob o mesmo teto, no bairro Castelo, em Belo Horizonte. Desde 2023.",
-      "url": "https://www.dbulltique.com.br/",
-      "image": "https://www.dbulltique.com.br/assets/img/og-image.jpg",
-      "logo": "https://www.dbulltique.com.br/assets/img/logo-lockup.png",
-      "foundingDate": "2023",
-      "servesCuisine": ["Parrilla argentina", "Churrasco", "Steakhouse"],
-      "acceptsReservations": "True",
-      "priceRange": "$$$",
-      "telephone": "+55-31-3582-7134",
-      "hasMenu": "https://app.cardapioweb.com/the_bulltique_vino_bar",
-      "hasMap": "https://maps.app.goo.gl/qHQgabW2TLSzPXPt6",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "71"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Altamiro Avelino Soares, 1021",
-        "addressLocality": "Belo Horizonte",
-        "addressRegion": "MG",
-        "postalCode": "31330-000",
-        "addressCountry": "BR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -19.8829,
-        "longitude": -43.9836
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "11:30",
-          "closes": "23:00"
-        }
-      ],
-      "sameAs": ["https://www.instagram.com/dbulltique"]
-    },
-    {
-      "@type": "Brewery",
-      "@id": "https://www.dbulltique.com.br/#brewery",
-      "name": "D'BullBeer",
-      "description": "Cervejaria artesanal própria da D'Bulltique: 15.000 litros/mês, 70 barris em circulação e 5 estilos de chopp — Pilsen, Hop Lager, Session IPA, IPA e Chopp de Vinho. Fornecimento B2B de barris 50L/30L e growler 1L em BH e região.",
-      "url": "https://www.dbulltique.com.br/#cerveja",
-      "image": "https://www.dbulltique.com.br/assets/img/lineup-chopps.jpg",
-      "parentOrganization": { "@id": "https://www.dbulltique.com.br/#restaurant" },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Altamiro Avelino Soares, 1021",
-        "addressLocality": "Belo Horizonte",
-        "addressRegion": "MG",
-        "postalCode": "31330-000",
-        "addressCountry": "BR"
-      },
-      "sameAs": ["https://www.instagram.com/dbulltique"]
-    }
-  ]
-}
-</script>
 </head>
 <body>
 
-<nav class="nav">
-  <a href="#topo" class="nav-logo" aria-label="D'Bulltique — início"><img src="assets/img/logo-horizontal.png" alt="D'Bulltique — Parrilla, Vinhos e Cervejaria" width="950" height="302"></a>
-  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nl">☰</button>
-  <div class="nav-links" id="nl">
-    <a href="#parrilla">Parrilla</a>
-    <a href="#cozinha">Cozinha</a>
-    <a href="#cardapio">Cardápio</a>
-    <a href="#vinho">Wine Bar</a>
-    <a href="#cerveja">D'BullBeer</a>
-    <a href="#copa">Copa 2026</a>
-    <a href="#local">Onde Estamos</a>
-    <a href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" class="btn">Reservar Mesa</a>
-  </div>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ============ NAVEGAÇÃO ============ -->
+<nav id="nav" aria-label="Navegação principal">
+  <a class="nav-brand" href="#topo" aria-label="Só Ofertas — início">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#FFD800"/><circle cx="32" cy="32" r="17" fill="#C98A3E"/><circle cx="32" cy="32" r="12.5" fill="#D8DCE2"/><circle cx="27" cy="27" r="4" fill="rgba(255,255,255,.55)"/></svg>
+    <span>Só Ofertas · Mídia Cooperada</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#conceito">Conceito</a></li>
+    <li><a href="#numeros">Números</a></li>
+    <li><a href="#ecossistema">Ecossistema</a></li>
+    <li><a href="#regiao">Presença</a></li>
+    <li><a href="#eficiencia">Eficiência</a></li>
+    <li><a href="#como">Como funciona</a></li>
+    <li class="keep"><a class="nav-cta magnetic" href="#parceria">Propor parceria</a></li>
+  </ul>
 </nav>
 
+<!-- ============ 1 · HERO ============ -->
 <header class="hero" id="topo">
-  <h1 class="sr-only">D'Bulltique — Parrilla, Vinhos e Cervejaria artesanal no Castelo, Belo Horizonte</h1>
-  <div class="hero-head">
-    <img class="hero-logo" src="assets/img/logo-lockup.png" alt="D'Bulltique — Parrilla · Vinhos · Cervejaria" width="1150" height="360" fetchpriority="high">
-    <p class="hero-sub">Castelo · Belo Horizonte — <b>três casas, um fogo.</b></p>
-    <div class="hero-ctas">
-      <a class="btn" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
-      <a class="btn ghost" href="#cerveja">Conhecer a D'BullBeer</a>
+  <div class="hero-map" aria-hidden="true">
+    <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1440 900">
+      <defs>
+        <linearGradient id="ln" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFD800" stop-opacity=".14"/>
+          <stop offset="1" stop-color="#FFD800" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g stroke="url(#ln)" fill="none" stroke-width="1">
+        <path d="M-50 700 Q 300 560 640 640 T 1500 520"/>
+        <path d="M-50 780 Q 380 640 760 720 T 1500 620"/>
+        <path d="M-50 620 Q 260 500 600 560 T 1500 430"/>
+      </g>
+      <g fill="#FFD800">
+        <circle cx="240" cy="640" r="3" opacity=".8"/><circle cx="240" cy="640" r="10" opacity=".12"/>
+        <circle cx="470" cy="590" r="3" opacity=".7"/><circle cx="470" cy="590" r="10" opacity=".1"/>
+        <circle cx="700" cy="650" r="3" opacity=".8"/><circle cx="700" cy="650" r="12" opacity=".12"/>
+        <circle cx="930" cy="580" r="3" opacity=".7"/><circle cx="930" cy="580" r="10" opacity=".1"/>
+        <circle cx="1150" cy="620" r="3" opacity=".8"/><circle cx="1150" cy="620" r="12" opacity=".12"/>
+        <circle cx="1330" cy="550" r="3" opacity=".6"/><circle cx="1330" cy="550" r="9" opacity=".1"/>
+      </g>
+      <g stroke="#FFD800" stroke-opacity=".14" fill="none">
+        <path d="M240 640 L470 590 L700 650 L930 580 L1150 620 L1330 550"/>
+      </g>
+    </svg>
+  </div>
+  <div class="glow g-yellow" style="width:640px;height:640px;top:-220px;right:-160px" data-parallax="0.12"></div>
+  <div class="glow g-red" style="width:520px;height:520px;bottom:-200px;left:-160px" data-parallax="-0.08"></div>
+
+  <div class="wrap">
+    <div class="hero-badge reveal"><i></i> Apresentação de parceria • Mídia Cooperada</div>
+
+    <div class="hero-logo reveal" role="img" aria-label="Logomarca Só Ofertas">
+      <!-- Reprodução vetorial da logomarca oficial (barra amarela, tipografia vermelha, moedas de R$1).
+           Para usar o arquivo original, substitua este SVG por <img src="assets/logo-oficial.png" alt="Só Ofertas"> -->
+      <svg viewBox="0 0 900 190">
+        <defs>
+          <linearGradient id="coinRing" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#E8A95B"/><stop offset=".5" stop-color="#C98A3E"/><stop offset="1" stop-color="#A96F28"/>
+          </linearGradient>
+          <linearGradient id="coinCore" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#DDE1E7"/><stop offset=".55" stop-color="#BFC5CE"/><stop offset="1" stop-color="#98A0AC"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="20" width="900" height="150" rx="10" fill="#FFD800"/>
+        <text x="30" y="146" font-family="'Rockwell','Roboto Slab','Arial Black',Arial,serif" font-weight="900" font-size="118" fill="#DE0F1E" letter-spacing="2">S</text>
+        <!-- Ó (moeda + acento agudo) -->
+        <g>
+          <rect x="206" y="10" width="15" height="36" rx="7.5" fill="#DE0F1E" transform="rotate(26 213 28)"/>
+          <circle cx="185" cy="102" r="52" fill="url(#coinRing)"/>
+          <circle cx="185" cy="102" r="37" fill="url(#coinCore)"/>
+          <circle cx="185" cy="102" r="37" fill="none" stroke="rgba(0,0,0,.14)" stroke-width="2"/>
+          <path d="M163 86 a37 37 0 0 1 32 -14" stroke="rgba(255,255,255,.45)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- O (moeda) -->
+        <g>
+          <circle cx="330" cy="102" r="52" fill="url(#coinRing)"/>
+          <circle cx="330" cy="102" r="37" fill="url(#coinCore)"/>
+          <circle cx="330" cy="102" r="37" fill="none" stroke="rgba(0,0,0,.14)" stroke-width="2"/>
+          <path d="M308 86 a37 37 0 0 1 32 -14" stroke="rgba(255,255,255,.45)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+        <text x="392" y="146" font-family="'Rockwell','Roboto Slab','Arial Black',Arial,serif" font-weight="900" font-size="118" fill="#DE0F1E" letter-spacing="1">FERTAS</text>
+      </svg>
+    </div>
+
+    <h1 class="hero-title reveal">Sua marca dentro de uma rede que <em>transforma ofertas em movimento</em>.</h1>
+    <p class="hero-sub reveal">Marcas fortes. Ofertas relevantes. Resultados que movimentam cidades. Uma estrutura regional com 16 unidades preparada para transformar mídia em alcance, relacionamento e oportunidades.</p>
+
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary magnetic" href="#parceria">Quero apresentar minha marca</a>
+      <a class="btn btn-ghost magnetic" href="#numeros">Ver os números da rede</a>
+    </div>
+
+    <div class="hero-strip reveal">
+      <div class="hs"><b><span data-count="16">0</span></b><small>unidades físicas</small></div>
+      <div class="hs"><b><span data-count="18.1" data-dec="1">0</span><sub> mi</sub></b><small>impressões · 6 meses</small></div>
+      <div class="hs"><b><span data-count="9.3" data-dec="1">0</span><sub> mi</sub></b><small>alcance acumulado</small></div>
+      <div class="hs"><b><span data-count="19.4" data-dec="1">0</span><sub> mil</sub></b><small>conversas no WhatsApp</small></div>
     </div>
   </div>
-  <div class="triad" id="triad">
-    <a class="panel" href="#parrilla">
-      <div class="panel-photo">
-        <picture>
-          <source srcset="assets/img/parrilla-brasa.webp" type="image/webp">
-          <img src="assets/img/parrilla-brasa.jpg" alt="Cortes de carne assando na chapa sobre a brasa" width="960" height="1280" fetchpriority="high">
-        </picture>
-      </div>
-      <div class="panel-inner">
-        <span class="panel-num">Casa 01</span>
-        <div class="panel-title">Parrilla</div>
-        <p class="panel-desc">Cortes nobres assados lentamente na brasa, no ritmo do fogo argentino.</p>
-        <span class="panel-link">Sentir o fogo</span>
-      </div>
-    </a>
-    <a class="panel" href="#vinho">
-      <div class="panel-photo">
-        <picture>
-          <source srcset="assets/img/vinho-adega.webp" type="image/webp">
-          <img src="assets/img/vinho-adega.jpg" alt="Garrafa de vinho 1550 BRAS Reserva 2023 sobre o balcão de mármore, com a adega ao fundo" width="1254" height="1254" fetchpriority="high">
-        </picture>
-      </div>
-      <div class="panel-inner">
-        <span class="panel-num">Casa 02</span>
-        <div class="panel-title">Wine Bar</div>
-        <p class="panel-desc">Rótulos selecionados para acompanhar a carne — e o Chopp de Vinho da casa.</p>
-        <span class="panel-link">Abrir a adega</span>
-      </div>
-    </a>
-    <a class="panel" href="#cerveja">
-      <div class="panel-photo">
-        <picture>
-          <source srcset="assets/img/tanques-fermentacao.webp" type="image/webp">
-          <img src="assets/img/tanques-fermentacao.jpg" alt="Tanques de fermentação da cervejaria própria D'BullBeer" width="1152" height="754" fetchpriority="high">
-        </picture>
-      </div>
-      <div class="panel-inner">
-        <span class="panel-num">Casa 03</span>
-        <div class="panel-title">Cervejaria</div>
-        <p class="panel-desc">D'BullBeer: 5 estilos de chopp artesanal produzidos pela própria casa.</p>
-        <span class="panel-link">Provar o malte</span>
-      </div>
-    </a>
-  </div>
-  <div class="scroll-hint" aria-hidden="true">Desça</div>
+  <div class="scroll-cue" aria-hidden="true">role</div>
 </header>
 
-<main>
-<section class="manifesto">
+<!-- ============ 2 · CONCEITO ============ -->
+<section id="conceito" class="section-line">
+  <div class="glow g-red" style="width:480px;height:480px;top:10%;right:-200px" data-parallax="0.07"></div>
   <div class="wrap">
-    <div class="rv">
-      <span class="eyebrow">O conceito</span>
-      <p class="mani-quote">Onde a brasa encontra o vinho — e a cerveja nasce <em>dentro de casa.</em></p>
-    </div>
-    <div class="stats rv">
-      <div class="stat"><b>Desde 2023</b><span>No Castelo,<br>Belo Horizonte</span></div>
-      <div class="stat"><b data-count="15000">0</b><span>Litros / mês<br>de produção própria</span></div>
-      <div class="stat"><b data-count="70">0</b><span>Barris<br>em circulação</span></div>
-      <div class="stat"><b data-count="5">0</b><span>Estilos<br>de chopp artesanal</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="parrilla">
-  <div class="casa">
-    <div class="casa-visual rv">
-      <video class="vid-auto" muted loop playsinline preload="metadata"
-             poster="assets/img/poster-brasa-parrilla.jpg" width="576" height="1024"
-             aria-label="Vídeo: fagulhas subindo da parrilla acesa da D'Bulltique">
-        <source src="assets/video/brasa-parrilla.mp4" type="video/mp4">
-      </video>
-      <span class="cv-badge">Casa 01 — Parrilla · ao vivo</span>
-    </div>
-    <div class="casa-body rv">
-      <span class="eyebrow">A Parrilla</span>
-      <h2 class="sec-title">O fogo manda no <em>tempo</em></h2>
-      <p class="lead">Na D'Bulltique, a parrilla não é um método — é uma filosofia. Cortes nobres assados lentamente sobre a brasa, sem pressa, do jeito que a tradição argentina ensina e a hospitalidade mineira serve.</p>
-      <ul class="feat-list">
-        <li><b>Cortes nobres na brasa</b> — selecionados e preparados no ponto exato</li>
-        <li><b>Fogo de verdade</b> — parrilla à vista, defumado natural, sem atalhos</li>
-        <li><b>Acompanhamentos da casa</b> — feitos para dividir a mesa</li>
-      </ul>
-      <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20parrilla%20da%20D%27Bulltique." target="_blank" rel="noopener">Reservar na parrilla</a>
-    </div>
-  </div>
-</section>
-
-<section id="cozinha" class="galeria">
-  <div class="wrap" style="text-align:center">
-    <div class="rv">
-      <span class="eyebrow center">Direto da cozinha</span>
-      <h2 class="sec-title">Da brasa à <em>sobremesa</em></h2>
-      <p class="lead" style="margin:0 auto">Um cardápio que começa no fogo e termina na colher — entradas para dividir, carnes no ponto e finais doces que valem a espera.</p>
-    </div>
-    <div class="gal-grid">
-      <div class="gal-item tall rv">
-        <picture>
-          <source srcset="assets/img/parrilla-brasa.webp" type="image/webp">
-          <img src="assets/img/parrilla-brasa.jpg" alt="Cortes na chapa com farofa e vinagrete" width="960" height="1280" loading="lazy" decoding="async">
-        </picture>
-        <div class="gal-cap">Cortes na brasa</div>
-      </div>
-      <div class="gal-item rv">
-        <picture>
-          <source srcset="assets/img/steak-tartare.webp" type="image/webp">
-          <img src="assets/img/steak-tartare.jpg" alt="Steak tartare com crocante de queijo" width="1050" height="1400" loading="lazy" decoding="async">
-        </picture>
-        <div class="gal-cap">Steak tartare</div>
-      </div>
-      <div class="gal-item rv">
-        <picture>
-          <source srcset="assets/img/aneis-cebola.webp" type="image/webp">
-          <img src="assets/img/aneis-cebola.jpg" alt="Anéis de cebola empanados com maionese da casa" width="1000" height="1333" loading="lazy" decoding="async">
-        </picture>
-        <div class="gal-cap">Entradas para dividir</div>
-      </div>
-      <div class="gal-item rv">
-        <video class="vid-auto" muted loop playsinline preload="metadata"
-               poster="assets/img/poster-file-au-poivre.jpg" width="464" height="832"
-               aria-label="Vídeo: filé mignon au poivre com risoto parmegiano saindo da cozinha">
-          <source src="assets/video/file-au-poivre.mp4" type="video/mp4">
-        </video>
-        <div class="gal-cap">Filé au poivre — ao vivo</div>
-      </div>
-      <div class="gal-item rv">
-        <picture>
-          <source srcset="assets/img/costela-brasa.webp" type="image/webp">
-          <img src="assets/img/costela-brasa.jpg" alt="Costela ao molho com mandioca grelhada" width="1050" height="1400" loading="lazy" decoding="async">
-        </picture>
-        <div class="gal-cap">Costela ao molho</div>
-      </div>
-      <div class="gal-item rv">
-        <picture>
-          <source srcset="assets/img/tiramisu.webp" type="image/webp">
-          <img src="assets/img/tiramisu.jpg" alt="Tiramisù da casa" width="788" height="1400" loading="lazy" decoding="async">
-        </picture>
-        <div class="gal-cap">Sobremesas da casa</div>
-      </div>
-      <div class="gal-item rv">
-        <video class="vid-auto" muted loop playsinline preload="metadata"
-               poster="assets/img/poster-frango-pomodoro.jpg" width="464" height="832"
-               aria-label="Vídeo: frango crocante com linguini ao pomodoro na janela da cozinha">
-          <source src="assets/video/frango-pomodoro.mp4" type="video/mp4">
-        </video>
-        <div class="gal-cap">Frango ao pomodoro — ao vivo</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="cardapio" class="menu-sec">
-  <noscript><style>.menu-panel{display:block !important}.menu-tabs{display:none}</style></noscript>
-  <div class="wrap">
-    <div class="rv" style="text-align:center">
-      <span class="eyebrow center">Direto do salão</span>
-      <h2 class="sec-title">Um gosto do <em>cardápio</em></h2>
-      <p class="lead" style="margin:0 auto">Uma amostra do que sai da brasa, da cozinha e das torneiras. O cardápio completo — com pedidos, retirada e delivery — está no nosso cardápio digital.</p>
-    </div>
-
-    <div class="menu-tabs rv" role="tablist" aria-label="Categorias do cardápio">
-      <button class="menu-tab active" id="mt-grelha" role="tab" aria-selected="true" aria-controls="mp-grelha">Parrilla &amp; Porções</button>
-      <button class="menu-tab" id="mt-entradas" role="tab" aria-selected="false" aria-controls="mp-entradas" tabindex="-1">Entradas &amp; Petiscos</button>
-      <button class="menu-tab" id="mt-chef" role="tab" aria-selected="false" aria-controls="mp-chef" tabindex="-1">Pratos do Chef</button>
-      <button class="menu-tab" id="mt-sand" role="tab" aria-selected="false" aria-controls="mp-sand" tabindex="-1">Sanduíches &amp; Pães</button>
-      <button class="menu-tab" id="mt-chopp" role="tab" aria-selected="false" aria-controls="mp-chopp" tabindex="-1">Chopps D'BullBeer</button>
-      <button class="menu-tab" id="mt-vinhos" role="tab" aria-selected="false" aria-controls="mp-vinhos" tabindex="-1">Vinhos &amp; Espumantes</button>
-      <button class="menu-tab" id="mt-emporio" role="tab" aria-selected="false" aria-controls="mp-emporio" tabindex="-1">Empório</button>
-    </div>
-
-    <div class="menu-panels rv">
-      <div class="menu-panel active" id="mp-grelha" role="tabpanel" aria-labelledby="mt-grelha">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Picanha Completa <span class="mi-flag">Mais pedido</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 185,80</span></div>
-            <p class="mi-desc">Para 2 pessoas: 300g da mais suculenta picanha bovina, grelhada na parrilla, com arroz, farofa e legumes.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Picanha 300g com Batata Rústica</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 139,80</span></div>
-            <p class="mi-desc">O corte símbolo da casa, no ponto exato, com batatas rústicas temperadas.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Picanha 300g com Legumes na Brasa</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 149,80</span></div>
-            <p class="mi-desc">O equilíbrio entre a intensidade da carne e a leveza dos legumes finalizados na brasa.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Ancho 300g com Batata Rústica</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
-            <p class="mi-desc">Marmoreio generoso e sabor profundo de parrilla.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Chorizo 300g com Batata Rústica</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
-            <p class="mi-desc">O clássico argentino, suculento e defumado pelo fogo.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Iscas de Carne Acebolada</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 85,80</span></div>
-            <p class="mi-desc">Com batata palito — combinação irresistível para dividir.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Copa Lombo com Mandioca Frita</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 79,80</span></div>
-            <p class="mi-desc">Suíno macio na brasa com mandioca crocante.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Linguiças Recheadas 400g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 47,80</span></div>
-            <p class="mi-desc">Pernil com brie e mel · picanha com queijo coalho · contrafilé com gorgonzola · pernil com abacaxi e provolone.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-panel" id="mp-entradas" role="tabpanel" aria-labelledby="mt-entradas">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Tartare na Ponta da Faca</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 64,80</span></div>
-            <p class="mi-desc">Filé mignon rigorosamente picado na ponta da faca, mostarda Dijon e especiarias clássicas.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Arancini de Funghi</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 67,80</span></div>
-            <p class="mi-desc">Bolinhos de risoto siciliano com mix de cogumelos frescos, empanados em panko, sobre fonduta de parmegiano.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Provoleta</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 54,80</span></div>
-            <p class="mi-desc">Provolone grelhado na parrilla, tomates confitados em azeite e pães artesanais da casa.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Tábua de Frios</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 54,80</span></div>
-            <p class="mi-desc">Presunto de parma, salame italiano e queijos brie, gruyère, gorgonzola e gouda.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Torresmo de Rolo 300g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 45,80</span></div>
-            <p class="mi-desc">Com geleia de frutas vermelhas — o mineiro encontra a alta cozinha.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Anéis de Cebola D'Bulltique <span class="mi-flag">Da casa</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 39,80</span></div>
-            <p class="mi-desc">Porção generosa de 400g, dourados e sequinhos, com maionese defumada da casa.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Focaccia ao Forno</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
-            <p class="mi-desc">Sal grosso e ervas, quente e crocante, com manteiga aerada da casa.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-panel" id="mp-chef" role="tabpanel" aria-labelledby="mt-chef">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Filé Mignon au Poivre</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
-            <p class="mi-desc">A picância aromática da pimenta verde com mostarda em grãos, acompanhado de risoto parmegiano.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Salmão Grelhado</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
-            <p class="mi-desc">Beurre blanc de alcaparras e risoto cremoso de aspargos.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Linguini à Carbonara</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 78,80</span></div>
-            <p class="mi-desc">A verdadeira receita romana: massa al dente num creme aveludado de gemas e queijo.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Tortellini de Brie com Damasco</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 78,80</span></div>
-            <p class="mi-desc">Fonduta de parmesão com nozes — uma combinação doce e salgada.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Frango Crocante ao Pomodoro</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 78,80</span></div>
-            <p class="mi-desc">Crosta de panko ultracrocante, interior suculento, linguini ao molho pomodoro.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Penne à l'Amatriciana</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 74,80</span></div>
-            <p class="mi-desc">A essência da culinária romana: molho rico de tomates pelados.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Pratos Kids</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>a partir de R$</small> 32,80</span></div>
-            <p class="mi-desc">Frango empanado, frango com massa pomodoro ou picadinho de mignon — feitos para os pequenos.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-panel" id="mp-sand" role="tabpanel" aria-labelledby="mt-sand">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">D'Bullguer <span class="mi-flag">Assinatura</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 49,80</span></div>
-            <p class="mi-desc">Pão de brioche, 180g de blend de carne angus, cheddar, bacon, maionese defumada, picles e alface americana.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">D'BullChicken</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 47,80</span></div>
-            <p class="mi-desc">Empanado de frango crocante, cheddar, bacon, maionese defumada e picles no brioche.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">D'BullFish</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 47,80</span></div>
-            <p class="mi-desc">Empanado de peixe crocante, cheddar e maionese defumada no brioche.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Choripan de Pernil</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
-            <p class="mi-desc">Linguiça de pernil e queijo canastra aquecido até derreter.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Choripan de Contrafilé</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
-            <p class="mi-desc">Contrafilé suculento com queijo gorgonzola derretido.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Pães Recheados</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 14,80</span></div>
-            <p class="mi-desc">Alho com queijo · tomate com provolone crocante · alho-poró com queijo suíço · frango com requeijão cremoso.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-panel" id="mp-chopp" role="tabpanel" aria-labelledby="mt-chopp">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Régua de Degustação <span class="mi-flag">Comece aqui</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,80</span></div>
-            <p class="mi-desc">Os 5 estilos da casa lado a lado — descubra o seu antes de pedir o copo cheio.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Premium Lager 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 15,00</span></div>
-            <p class="mi-desc">Leve, dourada e refrescante — o clássico de entrada. Growler 1L: R$ 34,00.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Hop Lager 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 18,00</span></div>
-            <p class="mi-desc">A leveza das lagers com o destaque aromático dos lúpulos. Growler 1L: R$ 38,00.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Session IPA 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 19,00</span></div>
-            <p class="mi-desc">Leve, refrescante e extremamente aromática. Growler 1L: R$ 42,00.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">América IPA 480ml</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 20,00</span></div>
-            <p class="mi-desc">Marcante, de aroma intenso e amargor equilibrado. Growler 1L: R$ 42,00.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Chopp de Vinho 480ml <span class="mi-flag">Exclusivo</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 18,00</span></div>
-            <p class="mi-desc">Servido trincando: a tradição vinícola com a leveza do draft e notas intensas de frutas vermelhas. Growler 1L: R$ 40,00.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-panel" id="mp-vinhos" role="tabpanel" aria-labelledby="mt-vinhos">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Taça de Espumante</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 35,00</span></div>
-            <p class="mi-desc">Para começar bem, sem compromisso com a garrafa.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Chandon Brut Reserve</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 145,80</span></div>
-            <p class="mi-desc">Espumante — o brinde clássico.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Água Santa Chardonnay 2024</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 99,80</span></div>
-            <p class="mi-desc">Branco — frescor para as entradas e o salmão.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Petit Chablis Les Grappes d'Or 2022</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 229,80</span></div>
-            <p class="mi-desc">Branco · Moillard, França — mineralidade de Borgonha.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">EA Cartuxa Rosé</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 185,80</span></div>
-            <p class="mi-desc">Rosé · Alentejo, Portugal — elegância para a tarde inteira.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Assobio Douro 2023</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 279,80</span></div>
-            <p class="mi-desc">Tinto · Esporão, Portugal — profundidade do Douro para a parrilla.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Esporão Reserva DOC 2022 <span class="mi-flag">Guarda</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 341,80</span></div>
-            <p class="mi-desc">Tinto · Alentejo, Portugal — o rótulo de guarda da adega.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Progreso Cabernet Sauvignon 2025</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 129,80</span></div>
-            <p class="mi-desc">Tinto — o parceiro certeiro da carne vermelha.</p>
-          </div>
-        </div>
-        <p class="menu-note">Brancos, rosés, tintos e espumantes — a adega completa está na carta digital.</p>
-      </div>
-
-      <div class="menu-panel" id="mp-emporio" role="tabpanel" aria-labelledby="mt-emporio">
-        <div class="menu-cols">
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Growler D'BullBeer 1L <span class="mi-flag">Pra levar</span></span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>a partir de R$</small> 34,00</span></div>
-            <p class="mi-desc">Do tanque para a sua geladeira: os 5 estilos da casa no formato de 1 litro.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Chimichurri da Casa 210g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 24,90</span></div>
-            <p class="mi-desc">Tradicional, limão siciliano ou picante — o tempero da parrilla em casa.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Salsa Criolla 210g</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 26,90</span></div>
-            <p class="mi-desc">O molho argentino que acompanha qualquer brasa.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Farofa Monjolo</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 16,90</span></div>
-            <p class="mi-desc">Tradicional ou de alho — artesanal, direto do monjolo.</p>
-          </div>
-          <div class="menu-item">
-            <div class="mi-head"><span class="mi-name">Villa Café Gourmet 1kg</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price"><small>R$</small> 139,80</span></div>
-            <p class="mi-desc">Torrado em grãos — para o dia seguinte começar à altura do jantar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="menu-note rv">Preços de julho/2026, sujeitos a alteração. Cardápio completo, pedidos, retirada e delivery no CardápioWeb.</p>
-    <div class="menu-ctas rv">
-      <a class="btn" href="https://app.cardapioweb.com/the_bulltique_vino_bar" target="_blank" rel="noopener">Cardápio completo &amp; Delivery</a>
-      <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar mesa</a>
-    </div>
-  </div>
-</section>
-
-<section id="vinho" class="vinho-sec">
-  <div class="casa rev">
-    <div class="casa-visual rv">
-      <picture>
-        <source srcset="assets/img/chopp-vinho.webp" type="image/webp">
-        <img src="assets/img/chopp-vinho.jpg" alt="Chopp de Vinho D'BullBeer servido sobre o barril — o encontro da adega com a cervejaria" width="733" height="1100" loading="lazy" decoding="async" style="min-height:380px">
-      </picture>
-      <span class="cv-badge">Casa 02 — Wine Bar</span>
-    </div>
-    <div class="casa-body rv">
-      <span class="eyebrow">O Wine Bar</span>
-      <h2 class="sec-title">Taças que conversam <em>com a carne</em></h2>
-      <p class="lead">Uma carta pensada para o casamento com a parrilla: tintos encorpados, rótulos de guarda e descobertas que valem a conversa. E, no cruzamento das nossas casas, nasceu o que só existe aqui: o <strong>Chopp de Vinho D'BullBeer</strong>.</p>
-      <ul class="feat-list">
-        <li><b>Carta selecionada</b> — curadoria voltada à harmonização com a brasa</li>
-        <li><b>Serviço em taça</b> — para provar sem compromisso com a garrafa</li>
-        <li><b>Chopp de Vinho</b> — o encontro da adega com a cervejaria, exclusivo da casa</li>
-      </ul>
-      <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20conhecer%20a%20carta%20de%20vinhos%20da%20D%27Bulltique." target="_blank" rel="noopener">Conhecer a carta</a>
-    </div>
-  </div>
-</section>
-
-<section id="cerveja" class="beer-sec">
-  <div class="wrap" style="text-align:center">
-    <div class="rv">
-      <span class="eyebrow center">Casa 03 — Cervejaria própria</span>
-      <h2 class="sec-title">D'BULL<em>BEER</em></h2>
-      <p class="lead" style="margin:0 auto">Não servimos cerveja artesanal. <strong>Fabricamos.</strong> Cada chopp parte de grãos e lúpulos escolhidos um a um — da matéria-prima selecionada à torneira, com produção própria, insumos rastreados e identidade de verdade no copo.</p>
-    </div>
-    <div class="lineup rv">
-      <picture>
-        <source srcset="assets/img/lineup-chopps.webp" type="image/webp">
-        <img src="assets/img/lineup-chopps.jpg" alt="A fileira dos cinco estilos de chopp D'BullBeer no balcão: Pilsen, Hop Lager, Session IPA, IPA e Chopp de Vinho" width="660" height="1100" loading="lazy" decoding="async">
-      </picture>
-    </div>
-    <div class="beer-grid">
-      <div class="beer-card rv" style="--accent:#e0b95f">
-        <div class="beer-photo">
-          <picture>
-            <source srcset="assets/img/card-pilsen.webp" type="image/webp">
-            <img src="assets/img/card-pilsen.jpg" alt="Chopp Pilsen D'BullBeer, dourado e translúcido" width="250" height="250" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="beer-body"><span class="beer-tag">01 · Leve · Clássica</span>
-        <h3 class="beer-style">Pilsen</h3>
-        <p class="beer-desc">Leve, dourado e refrescante. O clássico de entrada, fácil de beber e sempre certeiro.</p>
-        <span class="beer-price"><small>480ml</small> R$ 15 <small>· Growler 1L</small> R$ 34</span></div>
-      </div>
-      <div class="beer-card rv" style="--accent:#c89b3c">
-        <div class="beer-photo">
-          <picture>
-            <source srcset="assets/img/card-hoplager.webp" type="image/webp">
-            <img src="assets/img/card-hoplager.jpg" alt="Chopp Hop Lager D'BullBeer" width="270" height="270" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="beer-body"><span class="beer-tag">02 · Lupulada · Equilibrada</span>
-        <h3 class="beer-style">Hop Lager</h3>
-        <p class="beer-desc">Lager com lupulagem extra. Mais aroma e personalidade, mantendo a leveza.</p>
-        <span class="beer-price"><small>480ml</small> R$ 18 <small>· Growler 1L</small> R$ 38</span></div>
-      </div>
-      <div class="beer-card rv" style="--accent:#c65a2e">
-        <div class="beer-photo">
-          <picture>
-            <source srcset="assets/img/card-session.webp" type="image/webp">
-            <img src="assets/img/card-session.jpg" alt="Session IPA D'BullBeer" width="280" height="280" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="beer-body"><span class="beer-tag">03 · Aromática · Tropical</span>
-        <h3 class="beer-style">Session IPA</h3>
-        <p class="beer-desc">Aromática e tropical, baixo teor alcoólico. Notas cítricas que convidam ao próximo gole.</p>
-        <span class="beer-price"><small>480ml</small> R$ 19 <small>· Growler 1L</small> R$ 42</span></div>
-      </div>
-      <div class="beer-card rv" style="--accent:#8c3a3a">
-        <div class="beer-photo">
-          <picture>
-            <source srcset="assets/img/card-ipa.webp" type="image/webp">
-            <img src="assets/img/card-ipa.jpg" alt="Chopp IPA D'BullBeer, âmbar e intenso" width="330" height="330" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="beer-body"><span class="beer-tag">04 · Intensa · Marcante</span>
-        <h3 class="beer-style">IPA</h3>
-        <p class="beer-desc">Amargor marcante e lúpulo no comando. Para quem busca intensidade e caráter.</p>
-        <span class="beer-price"><small>480ml</small> R$ 20 <small>· Growler 1L</small> R$ 42</span></div>
-      </div>
-      <div class="beer-card rv" style="--accent:#6b1f2a">
-        <div class="beer-photo">
-          <picture>
-            <source srcset="assets/img/card-vinho.webp" type="image/webp">
-            <img src="assets/img/card-vinho.jpg" alt="Chopp de Vinho D'BullBeer, assinatura exclusiva da casa" width="380" height="420" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="beer-body"><span class="beer-tag">05 · Exclusiva · Assinatura</span>
-        <h3 class="beer-style">Chopp de Vinho</h3>
-        <p class="beer-desc">Encorpado e rubro, a assinatura da casa. Une parrilla, vinho e cerveja num só copo.</p>
-        <span class="beer-price"><small>480ml</small> R$ 18 <small>· Growler 1L</small> R$ 40</span></div>
-      </div>
-    </div>
-
     <div class="split">
-      <div class="casa-visual rv">
-        <picture>
-          <source srcset="assets/img/session-ipa-promo.webp" type="image/webp">
-          <img src="assets/img/session-ipa-promo.jpg" alt="Session IPA D'BullBeer: duas taças de chopp dourado no bar, com notas de maracujá, manga e grapefruit" width="681" height="1100" loading="lazy" decoding="async">
-        </picture>
-        <span class="cv-badge">Destaque da casa</span>
+      <div>
+        <div class="kicker reveal">O conceito</div>
+        <h2 class="reveal">Mídia cooperada: sua verba, <em>nossa audiência regional</em>.</h2>
+        <p class="lead reveal">Indústrias, fabricantes, distribuidores e grandes marcas disponibilizam <strong>verba de mídia</strong> para divulgar seus produtos dentro do ecossistema digital do Só Ofertas. Nós ativamos essa verba com o que temos de mais valioso: <strong>presença regional, audiência qualificada e frequência de compra</strong>.</p>
+        <p class="quote reveal">“Mais do que anunciar: <b>colocar sua marca diante de quem está pronto para comprar</b>.”</p>
       </div>
-      <div class="rv" style="text-align:left">
-        <span class="eyebrow">Destaque da casa</span>
-        <h3 class="sec-title">Session <em>IPA</em></h3>
-        <p class="lead">Leve, refrescante e extremamente aromática. Entrega toda a personalidade dos lúpulos com notas cítricas e tropicais — sem pesar. A porta de entrada perfeita para quem quer conhecer o mundo das IPAs.</p>
-        <div class="fruit-tags"><span>Maracujá</span><span>Manga</span><span>Grapefruit</span></div>
-        <a class="btn ghost" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Provar no salão</a>
-      </div>
-    </div>
-
-    <div class="split">
-      <div class="rv" style="text-align:left;order:0">
-        <span class="eyebrow">Nossa fábrica</span>
-        <h3 class="sec-title">Da nossa fábrica <em>para sua mesa</em></h3>
-        <p class="lead">A cervejaria fica dentro da casa. Mostura, fervura e fermentação conduzidas aqui, com controle de cada etapa — do tanque ao copo, sem intermediários. São <strong>15.000 litros por mês</strong> e <strong>70 barris em circulação</strong>.</p>
-        <ul class="feat-list" style="margin-top:1.4rem">
-          <li><b>Produção própria</b> — controle total da brassagem à torneira</li>
-          <li><b>Insumos rastreados</b> — lote, safra e origem documentados</li>
-          <li><b>Frescor garantido</b> — logística própria em BH e região</li>
+      <div class="flow-card reveal">
+        <div class="flow-title">A verba cooperada se transforma em</div>
+        <ul class="flow-list">
+          <li><span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></span>Alcance regional em cidades e bairros estratégicos</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></span>Exposição de produtos nas operações de oferta</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M12 21c-5-4-8-7-8-11a8 8 0 0 1 16 0c0 4-3 7-8 11z"/></svg></span>Engajamento e cliques de consumidores locais</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 0-3 6l4 1-1-4a8 8 0 0 0 0-3z"/></svg></span>Conversas no WhatsApp com intenção de compra</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.9"/></svg></span>Entrada de consumidores nos grupos de ofertas</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span>Movimento real nas unidades físicas</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3L22 9.3l-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 7.1-1z"/></svg></span>Fortalecimento da marca parceira na região</li>
         </ul>
       </div>
-      <div class="casa-visual rv" style="order:1">
-        <video class="vid-auto" muted loop playsinline preload="metadata"
-               poster="assets/img/poster-torneiras-chopp.jpg" width="464" height="832"
-               aria-label="Vídeo: a parede de torneiras de chopp da D'BullBeer com copos servidos no balcão">
-          <source src="assets/video/torneiras-chopp.mp4" type="video/mp4">
-        </video>
-        <span class="cv-badge">Cervejaria na casa · ao vivo</span>
-      </div>
-    </div>
-
-    <div class="insumos">
-      <div class="insumo rv">
-        <div class="insumo-photo">
-          <picture>
-            <source srcset="assets/img/insumo-maltas.webp" type="image/webp">
-            <img src="assets/img/insumo-maltas.jpg" alt="Sacas de Malta Pilsen El Jaguar e UMA Malta, cevada argentina" width="1012" height="900" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="ibody">
-          <span class="src">Malte · Boortmalt SAU — Argentina</span>
-          <h3>Malta Pilsen El Jaguar &amp; UMA Malta</h3>
-          <p>Cevada 100% argentina, de perfil maltado limpo. A espinha dorsal das nossas lagers e da Session IPA.</p>
-        </div>
-      </div>
-      <div class="insumo rv">
-        <div class="insumo-photo">
-          <picture>
-            <source srcset="assets/img/insumo-lupulo.webp" type="image/webp">
-            <img src="assets/img/insumo-lupulo.jpg" alt="Embalagem de lúpulo Hallertau Perle importado da Alemanha" width="618" height="1100" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="ibody">
-          <span class="src">Lúpulo · Spalter — Alemanha</span>
-          <h3>Hallertau Perle</h3>
-          <p>Lúpulo nobre de dupla finalidade: amargor refinado e aroma floral, levemente condimentado, que assina nossas receitas.</p>
-        </div>
-      </div>
-      <div class="insumo rv">
-        <div class="insumo-photo">
-          <picture>
-            <source srcset="assets/img/insumo-levedura.webp" type="image/webp">
-            <img src="assets/img/insumo-levedura.jpg" alt="Pacote de levedura SafLager W-34/70 da Fermentis" width="618" height="1100" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="ibody">
-          <span class="src">Levedura · Fermentis by Lesaffre</span>
-          <h3>SafLager W-34/70</h3>
-          <p>A cepa lager mais confiável do mundo. Perfil neutro e limpo que deixa o malte e o lúpulo se expressarem.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="formatos">
-      <div class="formato rv">
-        <picture>
-          <source srcset="assets/img/barril-50l.webp" type="image/webp">
-          <img src="assets/img/barril-50l.jpg" alt="Barril de 50 litros de chopp D'BullBeer" width="720" height="900" loading="lazy" decoding="async">
-        </picture>
-        <div class="fbody"><b>Barril 50L</b><span>Alto giro</span><p>Bares, eventos e operações de chopp contínuo.</p></div>
-      </div>
-      <div class="formato rv">
-        <picture>
-          <source srcset="assets/img/barril-30l.webp" type="image/webp">
-          <img src="assets/img/barril-30l.jpg" alt="Barril de 30 litros de chopp D'BullBeer" width="720" height="900" loading="lazy" decoding="async">
-        </picture>
-        <div class="fbody"><b>Barril 30L</b><span>Formato intermediário</span><p>Ideal para pontos de menor volume ou estilos rotativos.</p></div>
-      </div>
-      <div class="formato rv">
-        <picture>
-          <source srcset="assets/img/growler-chopp.webp" type="image/webp">
-          <img src="assets/img/growler-chopp.jpg" alt="Taças de chopp D'BullBeer douradas — growler de 1 litro para levar" width="361" height="460" loading="lazy" decoding="async">
-        </picture>
-        <div class="fbody"><b>Growler 1L</b><span>Para levar</span><p>Chopp fresco na sua casa. A experiência da D'Bulltique na sua mesa.</p></div>
-      </div>
-    </div>
-
-    <div class="b2b rv">
-      <div>
-        <h3>Vamos colocar a <em>D'BullBeer</em> na sua torneira?</h3>
-        <p>Fornecimento recorrente de barris para bares, restaurantes e eventos, com produção sob demanda e logística própria em Belo Horizonte e região. Fale com o comercial para tabela, condições e o primeiro pedido.</p>
-      </div>
-      <a class="btn" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20D%27BullBeer%20para%20meu%20estabelecimento." target="_blank" rel="noopener">Falar com o comercial</a>
     </div>
   </div>
 </section>
 
-<section id="copa" class="copa">
-  <div class="copa-bg" aria-hidden="true"></div>
-  <div class="wrap rv">
-    <span class="eyebrow center">Temporada especial</span>
-    <h2 class="sec-title">Copa do Mundo <em>2026</em></h2>
-    <p class="lead">Todos os jogos com telão, brasa acesa e chopp da casa gelado. A mesa mais disputada do Castelo nesta Copa é a nossa — garanta a sua antes que o apito soe.</p>
-    <div class="copa-strip">
-      <div class="copa-item"><b>Telão</b><span>Todos os jogos</span></div>
-      <div class="copa-item"><b>Combos</b><span>Parrilla + Chopp</span></div>
-      <div class="copa-item"><b>Reserva</b><span>Mesa garantida</span></div>
+<!-- ============ 3 · NÚMEROS ============ -->
+<section id="numeros" class="section-line" style="background:var(--bg-2)">
+  <div class="glow g-yellow" style="width:560px;height:560px;top:-140px;left:-220px" data-parallax="0.09"></div>
+  <div class="wrap">
+    <div class="kicker reveal">Números da rede</div>
+    <h2 class="reveal">O que a rede entregou <em>nos últimos seis meses</em>.</h2>
+    <p class="lead reveal">Dados reais e auditáveis dos gerenciadores de anúncios das 16 unidades — janeiro a julho de 2026, Meta Ads (Instagram e Facebook).</p>
+
+    <div class="grid-stats stagger">
+      <div class="stat" tabindex="0" data-tip="Soma do valor investido em mídia paga pelos 16 gerenciadores de anúncios da rede entre 01/jan e 10/jul de 2026."><span class="tag">Gestão de mídia</span><div class="num">R$ <span data-count="117">0</span><sub> mil</sub></div><div class="lbl">de mídia gerida no período</div></div>
+      <div class="stat" tabindex="0" data-tip="Total de vezes em que os anúncios da rede foram exibidos na tela de um consumidor."><span class="tag">Exposição</span><div class="num"><span data-count="18.1" data-dec="1">0</span><sub> mi</sub></div><div class="lbl">de impressões de anúncios</div></div>
+      <div class="stat" tabindex="0" data-tip="Soma do alcance dos conjuntos de anúncios das 16 unidades. Uma mesma pessoa pode ser alcançada por mais de uma campanha."><span class="tag">Audiência</span><div class="num"><span data-count="9.3" data-dec="1">0</span><sub> mi</sub></div><div class="lbl">de alcance acumulado</div></div>
+      <div class="stat" tabindex="0" data-tip="Reações, comentários, compartilhamentos, salvamentos e interações com publicações impulsionadas."><span class="tag">Engajamento</span><div class="num"><span data-count="741">0</span><sub> mil</sub></div><div class="lbl">interações com conteúdo</div></div>
+      <div class="stat" tabindex="0" data-tip="Visualizações qualificadas de vídeo (ThruPlay): o consumidor assistiu ao vídeo por completo ou por 15+ segundos."><span class="tag">Vídeo</span><div class="num"><span data-count="462">0</span><sub> mil</sub></div><div class="lbl">vídeos assistidos (ThruPlay)</div></div>
+      <div class="stat" tabindex="0" data-tip="Conversas iniciadas por consumidores no WhatsApp das unidades a partir de anúncios — canal direto de intenção de compra."><span class="tag">Conversão</span><div class="num"><span data-count="19.4" data-dec="1">0</span><sub> mil</sub></div><div class="lbl">conversas iniciadas no WhatsApp</div></div>
+      <div class="stat" tabindex="0" data-tip="Visitas a perfis e páginas das unidades geradas por anúncios — vitrine permanente das ofertas."><span class="tag">Descoberta</span><div class="num"><span data-count="65">0</span><sub> mil</sub></div><div class="lbl">visitas a perfis da rede</div></div>
+      <div class="stat" tabindex="0" data-tip="Conjuntos de anúncios veiculados no período, com segmentações hiperlocais por raio de 1 a 10 km ao redor de cada unidade."><span class="tag">Operação</span><div class="num"><span data-count="716">0</span></div><div class="lbl">campanhas hiperlocais veiculadas</div></div>
     </div>
-    <a class="btn" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20mesa%20para%20os%20jogos%20da%20Copa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar para os jogos</a>
+    <p class="src-note reveal">Fonte: relatórios oficiais do Gerenciador de Anúncios Meta das 16 unidades · 01 jan – 10 jul 2026. Valores agregados e arredondados para leitura.</p>
   </div>
 </section>
 
-<section id="local">
-  <div class="loc-grid">
-    <div class="rv">
-      <span class="eyebrow">Onde estamos</span>
-      <h2 class="sec-title">Vem sentir o <em>cheiro da brasa</em></h2>
-      <div class="info-block">
-        <h3>Endereço</h3>
-        <p>Av. Altamiro Avelino Soares, 1.021<br>Castelo · Belo Horizonte/MG · CEP 31.330-000</p>
-      </div>
-      <div class="info-block">
-        <h3>Horários</h3>
-        <p>Ter–Dom · a partir das 11h30 <em>(fechamento: consulte o Google — confirmar)</em></p>
-      </div>
-      <div class="info-block">
-        <h3>Reservas &amp; Contato</h3>
-        <p>Telefone e WhatsApp: <a href="tel:+553135827134" class="link-ouro">(31) 3582-7134</a> · Instagram: <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener" class="link-ouro">@dbulltique</a></p>
-      </div>
-      <div class="gbadge" aria-label="Nota 4,7 de 5 no Google, com 71 avaliações">
-        <span class="g-stars" aria-hidden="true">★★★★★</span><b>4,7</b> no Google · 71 avaliações
-      </div>
-      <div class="loc-ctas">
-        <a class="btn" href="https://maps.app.goo.gl/qHQgabW2TLSzPXPt6" target="_blank" rel="noopener">Abrir no Google Maps</a>
-        <a class="btn ghost" href="https://app.cardapioweb.com/the_bulltique_vino_bar" target="_blank" rel="noopener">Pedir &amp; Delivery</a>
-      </div>
-    </div>
-    <div class="loc-visual rv">
-      <picture>
-        <source srcset="assets/img/fachada.webp" type="image/webp">
-        <img src="assets/img/fachada.jpg" alt="Fachada da D'Bulltique no Castelo, Belo Horizonte, ao entardecer" width="1048" height="1400" loading="lazy" decoding="async">
-      </picture>
+<!-- ============ 4 · ECOSSISTEMA ============ -->
+<section id="ecossistema" class="section-line">
+  <div class="glow g-red" style="width:460px;height:460px;bottom:-140px;right:-160px" data-parallax="-0.06"></div>
+  <div class="wrap">
+    <div class="kicker reveal">O ecossistema</div>
+    <h2 class="reveal">Um sistema completo entre <em>a tela e a gôndola</em>.</h2>
+    <p class="lead reveal">Cada peça do ecossistema Só Ofertas foi construída para encurtar a distância entre ver uma oferta e colocá-la no carrinho. É dentro desse circuito que a sua marca circula.</p>
+
+    <div class="grid-eco stagger">
+      <div class="eco"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div><h3>16 unidades físicas</h3><p>Lojas de bairro com fluxo diário e relação de confiança com o consumidor local — o ponto final de toda a jornada de mídia.</p></div>
+      <div class="eco"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Perfis sociais por unidade</h3><p>Instagram e Facebook próprios em cada praça, com conteúdo de ofertas diário e audiência construída bairro a bairro.</p></div>
+      <div class="eco"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 0-3 6l4 1-1-4a8 8 0 0 0 0-3z"/></svg></div><h3>Grupos de ofertas no WhatsApp</h3><p>Comunidades VIP por região que recebem as ofertas em primeira mão — canal direto, sem algoritmo no meio do caminho.</p></div>
+      <div class="eco"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21c-5-4-8-7-8-11a8 8 0 0 1 16 0c0 4-3 7-8 11z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Meta Ads hiperlocal</h3><p>Campanhas segmentadas por raios de 1 a 10 km ao redor de cada loja: a mídia chega exatamente a quem pode ir até a gôndola.</p></div>
+      <div class="eco"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Atendimento via WhatsApp</h3><p>Milhares de conversas por mês iniciadas por anúncios — atendimento humano que transforma clique em lista de compras.</p></div>
+      <div class="eco"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div><h3>Calendário promocional</h3><p>Operações contínuas — Fecha Mês, Salário em Dobro, Queima de Estoque, festivais temáticos — que criam picos regulares de atenção e tráfego.</p></div>
     </div>
   </div>
 </section>
 
-<section class="final">
-  <div class="wrap rv">
-    <span class="eyebrow center">Reserve agora</span>
-    <h2 class="sec-title">Três casas.<br>Um fogo. <em>Sua mesa.</em></h2>
-    <p class="lead">Reserva direto pelo WhatsApp — resposta rápida, mesa garantida.</p>
-    <a class="btn btn-big" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">Reservar minha mesa</a>
+<!-- ============ 5 · PRESENÇA REGIONAL ============ -->
+<section id="regiao" class="section-line" style="background:var(--bg-2)">
+  <div class="glow g-yellow" style="width:520px;height:520px;top:20%;right:-200px" data-parallax="0.08"></div>
+  <div class="wrap">
+    <div class="kicker reveal">Presença regional</div>
+    <h2 class="reveal">16 unidades. <em>Uma malha de mídia</em> no interior paulista.</h2>
+    <p class="lead reveal">Cada unidade opera sua própria audiência digital. Somadas, formam uma malha regional de exposição contínua — e a sua marca pode ativar a rede inteira ou apenas as praças que interessam.</p>
+
+    <div class="chart-card reveal">
+      <div class="chart-title">Impressões de anúncios por unidade</div>
+      <div class="chart-sub">Milhões de impressões · 01 jan – 10 jul 2026 · passe o cursor sobre uma unidade para detalhes</div>
+      <div class="bars" id="bars" role="list"></div>
+      <div class="chart-note">* Bragança Paulista: relatório disponibilizado referente a 10 jun – 9 jul 2026. Fonte: Gerenciador de Anúncios Meta.</div>
+    </div>
   </div>
 </section>
-</main>
 
+<!-- ============ 6 · EFICIÊNCIA ============ -->
+<section id="eficiencia" class="section-line">
+  <div class="glow g-red" style="width:460px;height:460px;top:-120px;left:-180px" data-parallax="0.05"></div>
+  <div class="wrap">
+    <div class="kicker reveal">Eficiência de mídia</div>
+    <h2 class="reveal">Verba cooperada tratada com <em>disciplina de performance</em>.</h2>
+    <p class="lead reveal">Mídia hiperlocal, criativos de oferta e audiências quentes produzem custos por resultado difíceis de replicar em campanhas genéricas de marca. Estes são os custos médios reais da rede no período:</p>
+
+    <div class="grid-cost stagger">
+      <div class="cost"><i></i><div class="what">Interação com conteúdo</div><div class="val">R$ 0,014<small> /interação</small></div><div class="desc">Custo médio por engajamento — com campanhas a partir de R$ 0,007.</div></div>
+      <div class="cost"><i></i><div class="what">Vídeo assistido</div><div class="val">R$ 0,034<small> /ThruPlay</small></div><div class="desc">Custo médio por visualização qualificada de vídeo (15s ou completa).</div></div>
+      <div class="cost"><i></i><div class="what">Clique no link</div><div class="val">R$ 0,32<small> /clique</small></div><div class="desc">Custo médio por clique em campanhas de tráfego para grupos e destinos.</div></div>
+      <div class="cost"><i></i><div class="what">Conversa no WhatsApp</div><div class="val">R$ 2,97<small> /conversa</small></div><div class="desc">Custo médio por conversa iniciada — contato direto com intenção de compra.</div></div>
+    </div>
+    <p class="src-note reveal">Custos médios ponderados pelos resultados reportados nos gerenciadores das 16 unidades · jan–jul 2026. Resultados passados não garantem desempenho futuro; cada campanha é planejada e reportada individualmente.</p>
+  </div>
+</section>
+
+<!-- ============ 7 · COMO FUNCIONA ============ -->
+<section id="como" class="section-line" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="kicker reveal">Como funciona</div>
+    <h2 class="reveal">Da verba ao relatório, <em>em quatro movimentos</em>.</h2>
+    <p class="lead reveal">Um modelo simples, transparente e já praticado pela rede — campanhas de parceria com a indústria integram a operação de mídia do Só Ofertas.</p>
+
+    <div class="steps stagger">
+      <div class="step"><h3>Verba cooperada</h3><p>A marca parceira define o investimento de mídia, as praças e os produtos que deseja destacar dentro da rede.</p></div>
+      <div class="step"><h3>Plano de ativação</h3><p>Construímos o plano: criativos de oferta, formatos, operações do calendário e segmentação hiperlocal por unidade.</p></div>
+      <div class="step"><h3>Veiculação no ecossistema</h3><p>A campanha roda em Meta Ads, perfis das unidades, grupos de ofertas e materiais das lojas — mídia e varejo juntos.</p></div>
+      <div class="step"><h3>Relatório transparente</h3><p>A marca recebe os números da veiculação: investimento, impressões, alcance, cliques, conversas e evolução por praça.</p></div>
+    </div>
+
+    <div class="deliver stagger">
+      <div class="dl"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Produto herói nas operações de oferta</b><span>Seu produto em destaque nas campanhas de maior tração do calendário promocional.</span></div></div>
+      <div class="dl"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Vídeos e criativos dedicados</b><span>Conteúdo de oferta produzido para a marca, veiculado com mídia paga hiperlocal.</span></div></div>
+      <div class="dl"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Presença nos grupos de ofertas</b><span>Divulgação direta nas comunidades de WhatsApp das praças escolhidas.</span></div></div>
+      <div class="dl"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Ativação no ponto de venda</b><span>Exposição privilegiada na loja: a mídia digital termina na gôndola, onde a compra acontece.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 · CTA FINAL ============ -->
+<section id="parceria">
+  <div class="wrap">
+    <div class="final reveal">
+      <div class="kicker" style="display:inline-flex">Vamos juntos</div>
+      <h2>Coloque sua marca no circuito que <em>movimenta cidades</em>.</h2>
+      <p class="lead">Apresente seus produtos e objetivos. Em poucos dias, devolvemos uma proposta de mídia cooperada sob medida — praças, formatos, calendário e projeção de entrega.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Represento%20uma%20marca%20e%20quero%20conhecer%20a%20M%C3%ADdia%20Cooperada%20do%20S%C3%B3%20Ofertas." target="_blank" rel="noopener">Falar com o time de parcerias</a>
+        <a class="btn btn-ghost magnetic" href="mailto:parcerias@soofertas.com.br">parcerias@soofertas.com.br</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RODAPÉ ============ -->
 <footer>
-  <div class="foot">
-    <a href="#topo"><img src="assets/img/logo-horizontal.png" alt="D'Bulltique" width="950" height="302"></a>
-    <div class="socials">
-      <a href="https://instagram.com/dbulltique" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://maps.app.goo.gl/qHQgabW2TLSzPXPt6" target="_blank" rel="noopener">Google Maps</a>
+  <div class="wrap">
+    <div class="foot">
+      <div class="fb">
+        <svg viewBox="0 0 900 190" style="height:34px;width:auto" aria-label="Só Ofertas"><rect x="0" y="20" width="900" height="150" rx="10" fill="#FFD800"/><text x="30" y="146" font-family="'Rockwell','Roboto Slab','Arial Black',Arial,serif" font-weight="900" font-size="118" fill="#DE0F1E" letter-spacing="2">S</text><g><circle cx="185" cy="102" r="52" fill="#C98A3E"/><circle cx="185" cy="102" r="38" fill="#D8DCE2"/></g><g><circle cx="330" cy="102" r="52" fill="#C98A3E"/><circle cx="330" cy="102" r="38" fill="#D8DCE2"/></g><text x="392" y="146" font-family="'Rockwell','Roboto Slab','Arial Black',Arial,serif" font-weight="900" font-size="118" fill="#DE0F1E" letter-spacing="1">FERTAS</text></svg>
+        <p>Só Ofertas — Mídia Cooperada · Marcas fortes. Ofertas relevantes. Resultados que movimentam cidades.</p>
+      </div>
+      <p style="max-width:26em">Cabreúva · Valinhos · Valinhos Centro · Itatiba · Itupeva · Elísio · Bragança Centro · Bragança Paulista · Barão Geraldo · Sumaré · Sumaré 2 · Vila Arens · João Paulo · Paulínia · Eloy Chaves · Cosmópolis</p>
     </div>
-    <small>© 2026 D'Bulltique — Parrilla · Vinhos · Cervejaria<br>Av. Altamiro Avelino Soares, 1.021 — Castelo, Belo Horizonte/MG<br>Beba com moderação. Venda proibida para menores de 18 anos.</small>
+    <p class="disclaimer">Esta apresentação propõe uma <strong>parceria comercial de mídia cooperada</strong>: a destinação de verba de marketing da marca parceira para veiculação no ecossistema digital e físico do Só Ofertas. Não constitui oferta de investimento financeiro, empréstimo, sociedade ou promessa de retorno financeiro garantido. As métricas apresentadas provêm dos relatórios oficiais do Gerenciador de Anúncios Meta das unidades da rede (01 jan – 10 jul 2026) e refletem desempenho passado, que não garante resultados futuros. Cada campanha cooperada é planejada, aprovada e reportada individualmente à marca parceira. © 2026 Só Ofertas. Todos os direitos reservados.</p>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/553135827134?text=Ol%C3%A1%21%20Quero%20reservar%20uma%20mesa%20na%20D%27Bulltique." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.9C8.8 2.9 3 8.7 3 15.9c0 2.3.6 4.5 1.7 6.5L3 29.1l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.8 13-13S23.2 2.9 16 2.9zm0 23.7c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.9 4.8-10.7 10.7-10.7s10.7 4.8 10.7 10.7-4.8 10.6-10.7 10.6zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6c0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
-</a>
+<script>
+(function(){
+  "use strict";
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-<script src="assets/js/main.js" defer></script>
+  /* ---------- dados reais por unidade (Meta Ads, jan–jul 2026) ---------- */
+  const UNITS = [
+    {n:"Valinhos",          imp:1.86, reach:"965 mil", wpp:"1.533", spend:"R$ 10,1 mil"},
+    {n:"Sumaré",            imp:1.75, reach:"969 mil", wpp:"1.799", spend:"R$ 10,3 mil"},
+    {n:"Itatiba",           imp:1.53, reach:"643 mil", wpp:"1.673", spend:"R$ 8,8 mil"},
+    {n:"Itupeva",           imp:1.52, reach:"809 mil", wpp:"1.115", spend:"R$ 7,8 mil"},
+    {n:"Paulínia",          imp:1.49, reach:"776 mil", wpp:"868",   spend:"R$ 8,7 mil"},
+    {n:"Bragança Centro",   imp:1.45, reach:"641 mil", wpp:"1.455", spend:"R$ 8,1 mil"},
+    {n:"Cosmópolis",        imp:1.31, reach:"543 mil", wpp:"1.217", spend:"R$ 8,4 mil"},
+    {n:"Cabreúva",          imp:1.31, reach:"772 mil", wpp:"1.651", spend:"R$ 9,1 mil"},
+    {n:"Valinhos Centro",   imp:1.01, reach:"480 mil", wpp:"1.453", spend:"R$ 7,5 mil"},
+    {n:"Eloy Chaves",       imp:0.96, reach:"496 mil", wpp:"1.487", spend:"R$ 7,3 mil"},
+    {n:"Elísio",            imp:0.92, reach:"536 mil", wpp:"803",   spend:"R$ 5,8 mil"},
+    {n:"Barão Geraldo",     imp:0.89, reach:"443 mil", wpp:"1.088", spend:"R$ 8,8 mil"},
+    {n:"Vila Arens",        imp:0.88, reach:"487 mil", wpp:"1.592", spend:"R$ 6,6 mil"},
+    {n:"João Paulo",        imp:0.69, reach:"457 mil", wpp:"1.580", spend:"R$ 6,5 mil"},
+    {n:"Sumaré 2",          imp:0.54, reach:"306 mil", wpp:"176",   spend:"R$ 2,9 mil"},
+    {n:"Bragança Paulista*",imp:0.05, reach:"28 mil",  wpp:"—",     spend:"R$ 513"}
+  ];
+
+  /* ---------- gráfico de barras ---------- */
+  const bars = document.getElementById("bars");
+  if (bars){
+    const max = Math.max(...UNITS.map(u=>u.imp));
+    UNITS.forEach(u=>{
+      const row = document.createElement("div");
+      row.className = "bar-row"; row.setAttribute("role","listitem"); row.tabIndex = 0;
+      row.innerHTML =
+        '<span class="bar-name">'+u.n+'</span>'+
+        '<span class="bar-track"><span class="bar-fill" data-w="'+(u.imp/max*100).toFixed(1)+'"></span></span>'+
+        '<span class="bar-val">'+u.imp.toFixed(2).replace(".",",")+' mi</span>'+
+        '<span class="bar-tip" role="tooltip"><b>'+u.n.replace("*","")+'</b><br>Alcance: <b>'+u.reach+'</b> · Conversas WhatsApp: <b>'+u.wpp+'</b><br>Mídia gerida: <b>'+u.spend+'</b></span>';
+      bars.appendChild(row);
+    });
+  }
+
+  /* ---------- contadores ---------- */
+  const started = new WeakSet();
+  function runCounter(el){
+    if (started.has(el)) return; started.add(el);
+    const target = parseFloat(el.dataset.count);
+    const dec = parseInt(el.dataset.dec||"0",10);
+    const fmt = v => v.toLocaleString("pt-BR",{minimumFractionDigits:dec,maximumFractionDigits:dec});
+    if (reduced){ el.textContent = fmt(target); return; }
+    const dur = 1600, t0 = performance.now();
+    requestAnimationFrame(function tick(t){
+      const p = Math.min((t-t0)/dur,1), e = 1-Math.pow(1-p,3);
+      el.textContent = fmt(target*e);
+      if (p<1) requestAnimationFrame(tick);
+    });
+  }
+
+  /* ---------- reveal por scroll ---------- */
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      e.target.classList.add("on");
+      e.target.querySelectorAll(".bar-fill").forEach(b=>{ b.style.width = b.dataset.w + "%"; });
+      e.target.querySelectorAll("[data-count]").forEach(runCounter);
+      io.unobserve(e.target);
+    });
+  },{threshold:.18});
+  document.querySelectorAll(".reveal,.stagger,.chart-card").forEach(el=>io.observe(el));
+
+  /* ---------- barra de progresso + nav + parallax ---------- */
+  const prog = document.getElementById("progress"), nav = document.getElementById("nav");
+  const glows = Array.from(document.querySelectorAll("[data-parallax]"));
+  let ticking = false;
+  function onScroll(){
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(()=>{
+      const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+      prog.style.width = (h>0 ? (y/h*100) : 0) + "%";
+      nav.classList.toggle("scrolled", y > 30);
+      if (!reduced) glows.forEach(g=>{ g.style.transform = "translateY(" + (y*parseFloat(g.dataset.parallax)).toFixed(1) + "px)"; });
+      ticking = false;
+    });
+  }
+  addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  /* ---------- botões magnéticos ---------- */
+  if (!reduced && matchMedia("(pointer:fine)").matches){
+    document.querySelectorAll(".magnetic").forEach(btn=>{
+      btn.addEventListener("mousemove", ev=>{
+        const r = btn.getBoundingClientRect();
+        const x = (ev.clientX - r.left - r.width/2)*.18;
+        const y = (ev.clientY - r.top - r.height/2)*.28;
+        btn.style.transform = "translate("+x.toFixed(1)+"px,"+y.toFixed(1)+"px)";
+      });
+      btn.addEventListener("mouseleave", ()=>{ btn.style.transform = ""; });
+    });
+  }
+})();
+</script>
 </body>
 </html>
